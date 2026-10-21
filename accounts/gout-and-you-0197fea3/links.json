@@ -1,0 +1,93 @@
+{
+  "company": "Gout and You",
+  "brand": "Gout and You",
+  "report_date": "2026-10-21",
+  "slug": "gout-and-you-0197fea3",
+  "folder_name": "Gout and You - Spiro Koulouris - October 21, 2026",
+  "names": {
+    "base": "[AUDIT]-Gout and You - XP Strategy",
+    "html": "[AUDIT]-Gout and You - XP Strategy.html",
+    "account_sheet": "[AUDIT]-Gout and You - XP Strategy - Account Data.xlsx",
+    "ppc_workbook": "[AUDIT]-Gout and You - XP Strategy - PPC Audit.xlsx",
+    "notes_template": "[NOTES]-Gout and You - XP Strategy.xlsx",
+    "drive_folder": "Gout and You - Spiro Koulouris - October 21, 2026"
+  },
+  "marketplace": "US",
+  "window": "Aug 14 - Oct 14, 2026 (2026-08-14 to 2026-10-14)",
+  "data_source": "Two client-supplied exports: Sponsored Products Search Term report (Aug 14 - Oct 14, 2026) and a by-ASIN Business Report dated Oct 17, 2026",
+  "updated": "2026-10-21T13:51:07+00:00",
+  "items": [
+    {
+      "key": "amazon_listing",
+      "label": "Amazon listing",
+      "url": "https://www.amazon.com/dp/B01GU8GGQ2",
+      "group": "client"
+    },
+    {
+      "key": "storefront",
+      "label": "Amazon storefront",
+      "url": "https://www.amazon.com/stores/GoutandYou/page/13CA51E6-D802-4419-A692-29F067153B7A",
+      "group": "client"
+    },
+    {
+      "key": "website",
+      "label": "Website / Shopify",
+      "url": "https://goutandyou.com",
+      "group": "client"
+    },
+    {
+      "key": "ppc_sheet",
+      "label": "PPC Audit (Google Sheet)",
+      "url": null,
+      "group": "client"
+    },
+    {
+      "key": "seller_central",
+      "label": "Seller Central",
+      "url": "https://sellercentral.amazon.com/home",
+      "group": "team"
+    },
+    {
+      "key": "ads_console",
+      "label": "Ads console",
+      "url": "https://advertising.amazon.com/cm/campaigns",
+      "group": "team"
+    },
+    {
+      "key": "inventory",
+      "label": "Inventory",
+      "url": "https://sellercentral.amazon.com/myinventory/inventory",
+      "group": "team"
+    },
+    {
+      "key": "ghl",
+      "label": "GHL",
+      "url": null,
+      "group": "team"
+    },
+    {
+      "key": "clickup",
+      "label": "ClickUp",
+      "url": null,
+      "group": "team"
+    },
+    {
+      "key": "drive_folder",
+      "label": "Drive folder",
+      "url": null,
+      "group": "team"
+    }
+  ],
+  "client_files": [],
+  "account_sheet": null,
+  "sheet_tabs": {},
+  "pages": [
+    {
+      "key": "audit",
+      "label": "PPC Audit",
+      "file": "audit.html",
+      "note": "Account overview, ad spend, strategy, search, ASINs, recommendations"
+    }
+  ],
+  "hub_url": "https://xpstrategy.github.io/Prospect-Audits/accounts/gout-and-you-0197fea3/"
+}
