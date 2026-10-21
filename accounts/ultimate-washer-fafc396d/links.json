@@ -15,7 +15,7 @@
   "marketplace": "US",
   "window": "Last 30 Days (2026-08-05 to 2026-09-03)",
   "data_source": "Amazon Seller Central and Amazon Ads exports",
-  "updated": "2026-10-21T12:35:09+00:00",
+  "updated": "2026-10-21T12:36:04+00:00",
   "items": [
     {
       "key": "amazon_listing",
@@ -79,7 +79,7 @@
     }
   ],
   "client_files": [],
-  "account_sheet": null,
+  "account_sheet": "https://docs.google.com/spreadsheets/d/1xNOEBPoN6Omn3yjCur6YyFeXs5KHHbehkvGhKEErpAA/edit",
   "sheet_tabs": {},
   "pages": [
     {
