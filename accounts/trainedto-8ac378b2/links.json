@@ -1,19 +1,19 @@
 {
   "company": "TrainedTo",
   "slug": "trainedto-8ac378b2",
-  "folder_name": "TrainedTo - October 20, 2026",
+  "folder_name": "TrainedTo - Malak Madi - October 19, 2026",
   "names": {
     "base": "[AUDIT]-TrainedTo - XP Strategy",
     "html": "[AUDIT]-TrainedTo - XP Strategy.html",
     "account_sheet": "[AUDIT]-TrainedTo - XP Strategy - Account Data.xlsx",
     "ppc_workbook": "[AUDIT]-TrainedTo - XP Strategy - PPC Audit.xlsx",
     "notes_template": "[NOTES]-TrainedTo - XP Strategy.xlsx",
-    "drive_folder": "TrainedTo - October 20, 2026"
+    "drive_folder": "TrainedTo - Malak Madi - October 19, 2026"
   },
   "marketplace": "US",
   "window": "Last 30 Days (2026-09-19 to 2026-10-18)",
   "data_source": "Amazon Seller Central and Amazon Ads exports",
-  "updated": "2026-10-21T11:11:28+00:00",
+  "updated": "2026-10-21T11:25:09+00:00",
   "items": [
     {
       "key": "amazon_listing",
@@ -72,7 +72,7 @@
     {
       "key": "drive_folder",
       "label": "Drive folder",
-      "url": null,
+      "url": "https://drive.google.com/drive/u/0/folders/1ywdI4AzqjVfRGGiyrKjJcjEXVcz4-cQq",
       "group": "team"
     }
   ],
