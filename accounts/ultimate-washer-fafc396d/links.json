@@ -3,19 +3,19 @@
   "brand": "Ultimate Washer",
   "report_date": "2026-10-21",
   "slug": "ultimate-washer-fafc396d",
-  "folder_name": "Ultimate Washer - October 21, 2026",
+  "folder_name": "Ultimate Washer - Nadia Deeb Newton - October 1, 2026",
   "names": {
     "base": "[AUDIT]-Ultimate Washer - XP Strategy",
     "html": "[AUDIT]-Ultimate Washer - XP Strategy.html",
     "account_sheet": "[AUDIT]-Ultimate Washer - XP Strategy - Account Data.xlsx",
     "ppc_workbook": "[AUDIT]-Ultimate Washer - XP Strategy - PPC Audit.xlsx",
     "notes_template": "[NOTES]-Ultimate Washer - XP Strategy.xlsx",
-    "drive_folder": "Ultimate Washer - October 21, 2026"
+    "drive_folder": "Ultimate Washer - Nadia Deeb Newton - October 1, 2026"
   },
   "marketplace": "US",
   "window": "Last 30 Days (2026-08-05 to 2026-09-03)",
   "data_source": "Amazon Seller Central and Amazon Ads exports",
-  "updated": "2026-10-21T12:28:35+00:00",
+  "updated": "2026-10-21T12:29:42+00:00",
   "items": [
     {
       "key": "amazon_listing",
@@ -74,7 +74,7 @@
     {
       "key": "drive_folder",
       "label": "Drive folder",
-      "url": null,
+      "url": "https://drive.google.com/drive/folders/1uqHHhC92mwJcygEqoZfIQz21PGAZpxMw",
       "group": "team"
     }
   ],
