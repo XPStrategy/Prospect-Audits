@@ -15,7 +15,7 @@
   "marketplace": "US",
   "window": "Aug 14 - Oct 14, 2026 (2026-08-14 to 2026-10-14)",
   "data_source": "Two client-supplied exports: Sponsored Products Search Term report (Aug 14 - Oct 14, 2026) and a by-ASIN Business Report dated Oct 17, 2026",
-  "updated": "2026-10-21T13:51:41+00:00",
+  "updated": "2026-10-21T14:12:21+00:00",
   "items": [
     {
       "key": "amazon_listing",
@@ -38,7 +38,7 @@
     {
       "key": "ppc_sheet",
       "label": "PPC Audit (Google Sheet)",
-      "url": null,
+      "url": "https://docs.google.com/spreadsheets/d/18Gkp8BGNb0ZkiamIJOBPs6letfNnooMBWQZrDgTsTKc/edit",
       "group": "client"
     },
     {
@@ -79,7 +79,7 @@
     }
   ],
   "client_files": [],
-  "account_sheet": null,
+  "account_sheet": "https://docs.google.com/spreadsheets/d/14j-f7D1tJXdoNVWptDR5ySTXzwL49-_nEucO2siTeIY/edit",
   "sheet_tabs": {},
   "pages": [
     {
