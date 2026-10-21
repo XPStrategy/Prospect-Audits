@@ -15,7 +15,7 @@
   "marketplace": "US",
   "window": "Last 30 Days (2026-09-19 to 2026-10-18)",
   "data_source": "Amazon Seller Central and Amazon Ads exports",
-  "updated": "2026-10-21T12:06:02+00:00",
+  "updated": "2026-10-21T12:12:26+00:00",
   "items": [
     {
       "key": "amazon_listing",
@@ -36,9 +36,9 @@
       "group": "client"
     },
     {
-      "key": "account_sheet",
-      "label": "Account data (Google Sheet)",
-      "url": "https://docs.google.com/spreadsheets/d/1UFNZAn_Rd3uSvtSfC9lwZL0PypqHsJuf5q6rXjWFXWM/edit",
+      "key": "ppc_sheet",
+      "label": "PPC Audit (Google Sheet)",
+      "url": "https://docs.google.com/spreadsheets/d/1lNm2zmbdcWnJruUxXJqrAbu9zqSkwtQAHY40FBzbYqk/edit",
       "group": "client"
     },
     {
