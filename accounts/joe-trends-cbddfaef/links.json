@@ -1,0 +1,93 @@
+{
+  "company": "Joe Trends",
+  "brand": "Joe Trends",
+  "report_date": "2026-10-21",
+  "slug": "joe-trends-cbddfaef",
+  "folder_name": "Joe Trends - Joe Barravechio - September 30, 2026",
+  "names": {
+    "base": "[AUDIT]-Joe Trends - XP Strategy",
+    "html": "[AUDIT]-Joe Trends - XP Strategy.html",
+    "account_sheet": "[AUDIT]-Joe Trends - XP Strategy - Account Data.xlsx",
+    "ppc_workbook": "[AUDIT]-Joe Trends - XP Strategy - PPC Audit.xlsx",
+    "notes_template": "[NOTES]-Joe Trends - XP Strategy.xlsx",
+    "drive_folder": "Joe Trends - Joe Barravechio - September 30, 2026"
+  },
+  "marketplace": "US",
+  "window": "Last 30 Days (2026-08-31 to 2026-09-29)",
+  "data_source": "Seller Central + Amazon Ads console exports",
+  "updated": "2026-10-21T12:51:36+00:00",
+  "items": [
+    {
+      "key": "amazon_listing",
+      "label": "Amazon listing",
+      "url": "https://www.amazon.com/dp/B00124P7SI",
+      "group": "client"
+    },
+    {
+      "key": "storefront",
+      "label": "Amazon storefront",
+      "url": "https://www.amazon.com/stores/SwingSpeedRadar/page/D521BEC9-1862-4174-8D98-975D2F1D5FAF",
+      "group": "client"
+    },
+    {
+      "key": "website",
+      "label": "Website / Shopify",
+      "url": null,
+      "group": "client"
+    },
+    {
+      "key": "ppc_sheet",
+      "label": "PPC Audit (Google Sheet)",
+      "url": null,
+      "group": "client"
+    },
+    {
+      "key": "seller_central",
+      "label": "Seller Central",
+      "url": "https://sellercentral.amazon.com/home",
+      "group": "team"
+    },
+    {
+      "key": "ads_console",
+      "label": "Ads console",
+      "url": "https://advertising.amazon.com/cm/campaigns",
+      "group": "team"
+    },
+    {
+      "key": "inventory",
+      "label": "Inventory",
+      "url": "https://sellercentral.amazon.com/myinventory/inventory",
+      "group": "team"
+    },
+    {
+      "key": "ghl",
+      "label": "GHL",
+      "url": null,
+      "group": "team"
+    },
+    {
+      "key": "clickup",
+      "label": "ClickUp",
+      "url": null,
+      "group": "team"
+    },
+    {
+      "key": "drive_folder",
+      "label": "Drive folder",
+      "url": "https://drive.google.com/drive/folders/11ZCWBPCgtpxoIpOQ9W8t6yNe7XhyeD0X",
+      "group": "team"
+    }
+  ],
+  "client_files": [],
+  "account_sheet": null,
+  "sheet_tabs": {},
+  "pages": [
+    {
+      "key": "audit",
+      "label": "PPC Audit",
+      "file": "audit.html",
+      "note": "Account overview, ad spend, strategy, search, ASINs, recommendations"
+    }
+  ],
+  "hub_url": "https://xpstrategy.github.io/Prospect-Audits/accounts/joe-trends-cbddfaef/"
+}
