@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>[AUDIT]-PowerNet - XP Strategy</title>
+<style>
+:root { --dark:#111318; --ink:#1a1d24; --accent:#FF9900; --muted:#666666; --bg:#fafaf7; --border:#e6e4de; }
+* { box-sizing:border-box; margin:0; padding:0; }
+body { font-family:'Helvetica Neue',Arial,sans-serif; background:var(--bg); color:var(--ink); }
+header { background:var(--dark); color:#fff; padding:28px 16px; }
+.in { max-width:1080px; margin:0 auto; padding:0 24px; }
+h1 { font-size:22px; font-weight:600; } .sub { opacity:.75; font-size:13px; margin-top:6px; }
+.bar { position:sticky; top:0; background:#fff; border-bottom:3px solid var(--accent); z-index:10; }
+.bar .in { display:flex; flex-wrap:wrap; gap:6px 8px; padding:10px 24px; align-items:center; }
+.h { font-size:10.5px; font-weight:700; text-transform:uppercase; letter-spacing:.8px; margin-right:4px; }
+.h2 { margin-left:10px; padding-left:12px; border-left:1px solid var(--border); color:var(--muted); }
+.lk { font-size:12px; font-weight:600; color:var(--dark); background:#fff7ea; border:1px solid var(--accent);
+       border-radius:14px; padding:4px 11px; text-decoration:none; white-space:nowrap; }
+a.lk:hover { background:var(--accent); color:#fff; }
+.lk.t { background:#f3f4f6; border-color:#c9ccd2; }
+.lk.off { color:#b5b5b5; background:#fafafa; border:1px dashed #d6d6d6; font-weight:500; }
+.team { display:none; } body.is-team .team { display:inline-flex; flex-wrap:wrap; gap:6px 8px; }
+main { padding:28px 0 60px; }
+.grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(240px,1fr)); gap:16px; }
+.card { display:block; background:#fff; border:1px solid var(--border); border-left:4px solid var(--accent);
+         border-radius:6px; padding:18px; text-decoration:none; color:var(--ink); }
+.card:hover { box-shadow:0 4px 14px rgba(0,0,0,.08); }
+.card b { display:block; font-size:16px; margin-bottom:6px; color:var(--dark); }
+.card span { font-size:12.5px; color:var(--muted); }
+.card.sheet { border-left-color:#5b8f5b; }
+.meta { font-size:12px; color:var(--muted); margin-top:26px; }
+@media (max-width:640px) { .in { padding:0 16px; } .bar .in { padding:8px 16px; } }
+</style></head>
+<body>
+<header><div class="in"><h1>[AUDIT]-PowerNet - XP Strategy</h1><div class="sub" id="sub"></div></div></header>
+<div class="bar"><div class="in" id="bar"></div></div>
+<main><div class="in"><div class="grid" id="cards"></div><p class="meta" id="meta"></p></div></main>
+<script type="application/json" id="seed">{"company": "PowerNet", "slug": "powernet-b4ea9049", "folder_name": "PowerNet - September 28, 2026", "names": {"base": "[AUDIT]-PowerNet - XP Strategy", "html": "[AUDIT]-PowerNet - XP Strategy.html", "account_sheet": "[AUDIT]-PowerNet - XP Strategy - Account Data.xlsx", "ppc_workbook": "[AUDIT]-PowerNet - XP Strategy - PPC Audit.xlsx", "notes_template": "[NOTES]-PowerNet - XP Strategy.xlsx", "drive_folder": "PowerNet - September 28, 2026"}, "marketplace": "US", "window": "Last 30 Days (2026-08-29 to 2026-09-27)", "data_source": "Amazon Seller Central and Amazon Ads exports", "updated": "2026-10-21T11:11:28+00:00", "items": [{"key": "amazon_listing", "label": "Amazon listing", "url": "https://www.amazon.com/dp/B00NG1ECBS", "group": "client"}, {"key": "storefront", "label": "Amazon storefront", "url": null, "group": "client"}, {"key": "website", "label": "Website / Shopify", "url": null, "group": "client"}, {"key": "account_sheet", "label": "Account data (Google Sheet)", "url": null, "group": "client"}, {"key": "seller_central", "label": "Seller Central", "url": "https://sellercentral.amazon.com/home", "group": "team"}, {"key": "ads_console", "label": "Ads console", "url": "https://advertising.amazon.com/cm/campaigns", "group": "team"}, {"key": "inventory", "label": "Inventory", "url": "https://sellercentral.amazon.com/myinventory/inventory", "group": "team"}, {"key": "ghl", "label": "GHL", "url": null, "group": "team"}, {"key": "clickup", "label": "ClickUp", "url": null, "group": "team"}, {"key": "drive_folder", "label": "Drive folder", "url": null, "group": "team"}], "client_files": [], "account_sheet": null, "sheet_tabs": {}, "pages": [{"key": "audit", "label": "PPC Audit", "file": "audit.html", "note": "Account overview, ad spend, strategy, search, ASINs, recommendations"}]}</script>
+<script>
+(function(){
+  var M = JSON.parse(document.getElementById('seed').textContent);
+  var team = /[?&]team=1/.test(location.search) || location.hash === '#team';
+  if (team) document.body.classList.add('is-team');
+  function e(t){ var d=document.createElement('div'); d.textContent=t||''; return d.innerHTML; }
+  function q(team){ return team ? (location.search || '') : ''; }
+  function render(){
+    if (M.names && M.names.base) document.title = M.names.base;
+    var h1 = document.querySelector('h1'); if (M.names && M.names.base) h1.textContent = M.names.base;
+    document.getElementById('sub').textContent = (M.folder_name || '') + (M.updated ? '  ·  updated ' + M.updated.slice(0,10) : '');
+    var c = '<span class="h">Links</span>', t = '<span class="team"><span class="h h2">Team</span>';
+    (M.items || []).forEach(function(i){
+      var url = i.key === 'account_sheet' ? (M.account_sheet || i.url) : i.url;
+      var cls = 'lk' + (i.group === 'team' ? ' t' : '');
+      var s = url ? '<a class="'+cls+'" target="_blank" rel="noopener" href="'+e(url)+'">'+e(i.label)+'</a>'
+                  : '<span class="lk off">'+e(i.label)+'</span>';
+      if (i.group === 'team') t += s; else c += s;
+    });
+    (M.client_files || []).forEach(function(f){ if (f.url) t += '<a class="lk t" target="_blank" rel="noopener" href="'+e(f.url)+'">'+e(f.label || 'Client file')+'</a>'; });
+    document.getElementById('bar').innerHTML = c + t + '</span>';
+    var cards = '';
+    (M.pages || []).forEach(function(p){
+      cards += '<a class="card" href="'+e(p.file)+q(team)+'"><b>'+e(p.label)+'</b><span>'+e(p.note || 'Open page')+'</span></a>';
+    });
+    if (M.account_sheet) cards += '<a class="card sheet" target="_blank" rel="noopener" href="'+e(M.account_sheet)+'"><b>Account data sheet</b><span>All tabs: links, overview, notes, raw data</span></a>';
+    document.getElementById('cards').innerHTML = cards;
+    document.getElementById('meta').textContent = 'Data window: ' + (M.window || '—') + '  ·  Source: ' + (M.data_source || '—');
+  }
+  render();
+  if (location.protocol.indexOf('http') === 0) {
+    fetch('links.json', {cache:'no-store'}).then(function(r){ return r.ok ? r.json() : null; })
+      .then(function(j){ if (j) { M = Object.assign(M, j); render(); } }).catch(function(){});
+  }
+})();
+</script>
+</body></html>

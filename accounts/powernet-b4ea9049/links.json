@@ -1,0 +1,90 @@
+{
+  "company": "PowerNet",
+  "slug": "powernet-b4ea9049",
+  "folder_name": "PowerNet - September 28, 2026",
+  "names": {
+    "base": "[AUDIT]-PowerNet - XP Strategy",
+    "html": "[AUDIT]-PowerNet - XP Strategy.html",
+    "account_sheet": "[AUDIT]-PowerNet - XP Strategy - Account Data.xlsx",
+    "ppc_workbook": "[AUDIT]-PowerNet - XP Strategy - PPC Audit.xlsx",
+    "notes_template": "[NOTES]-PowerNet - XP Strategy.xlsx",
+    "drive_folder": "PowerNet - September 28, 2026"
+  },
+  "marketplace": "US",
+  "window": "Last 30 Days (2026-08-29 to 2026-09-27)",
+  "data_source": "Amazon Seller Central and Amazon Ads exports",
+  "updated": "2026-10-21T11:11:28+00:00",
+  "items": [
+    {
+      "key": "amazon_listing",
+      "label": "Amazon listing",
+      "url": "https://www.amazon.com/dp/B00NG1ECBS",
+      "group": "client"
+    },
+    {
+      "key": "storefront",
+      "label": "Amazon storefront",
+      "url": null,
+      "group": "client"
+    },
+    {
+      "key": "website",
+      "label": "Website / Shopify",
+      "url": null,
+      "group": "client"
+    },
+    {
+      "key": "account_sheet",
+      "label": "Account data (Google Sheet)",
+      "url": null,
+      "group": "client"
+    },
+    {
+      "key": "seller_central",
+      "label": "Seller Central",
+      "url": "https://sellercentral.amazon.com/home",
+      "group": "team"
+    },
+    {
+      "key": "ads_console",
+      "label": "Ads console",
+      "url": "https://advertising.amazon.com/cm/campaigns",
+      "group": "team"
+    },
+    {
+      "key": "inventory",
+      "label": "Inventory",
+      "url": "https://sellercentral.amazon.com/myinventory/inventory",
+      "group": "team"
+    },
+    {
+      "key": "ghl",
+      "label": "GHL",
+      "url": null,
+      "group": "team"
+    },
+    {
+      "key": "clickup",
+      "label": "ClickUp",
+      "url": null,
+      "group": "team"
+    },
+    {
+      "key": "drive_folder",
+      "label": "Drive folder",
+      "url": null,
+      "group": "team"
+    }
+  ],
+  "client_files": [],
+  "account_sheet": null,
+  "sheet_tabs": {},
+  "pages": [
+    {
+      "key": "audit",
+      "label": "PPC Audit",
+      "file": "audit.html",
+      "note": "Account overview, ad spend, strategy, search, ASINs, recommendations"
+    }
+  ]
+}

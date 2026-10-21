@@ -1,0 +1,90 @@
+{
+  "company": "Badass Moto",
+  "slug": "badass-moto-182dc0ad",
+  "folder_name": "Badass Moto - September 4, 2026",
+  "names": {
+    "base": "[AUDIT]-Badass Moto - XP Strategy",
+    "html": "[AUDIT]-Badass Moto - XP Strategy.html",
+    "account_sheet": "[AUDIT]-Badass Moto - XP Strategy - Account Data.xlsx",
+    "ppc_workbook": "[AUDIT]-Badass Moto - XP Strategy - PPC Audit.xlsx",
+    "notes_template": "[NOTES]-Badass Moto - XP Strategy.xlsx",
+    "drive_folder": "Badass Moto - September 4, 2026"
+  },
+  "marketplace": "US",
+  "window": "Last 30 Days (2026-08-03 to 2026-09-01)",
+  "data_source": "Amazon Seller Central and Amazon Ads exports",
+  "updated": "2026-10-21T11:11:28+00:00",
+  "items": [
+    {
+      "key": "amazon_listing",
+      "label": "Amazon listing",
+      "url": "https://www.amazon.com/dp/B01N6PMXBR",
+      "group": "client"
+    },
+    {
+      "key": "storefront",
+      "label": "Amazon storefront",
+      "url": null,
+      "group": "client"
+    },
+    {
+      "key": "website",
+      "label": "Website / Shopify",
+      "url": null,
+      "group": "client"
+    },
+    {
+      "key": "account_sheet",
+      "label": "Account data (Google Sheet)",
+      "url": null,
+      "group": "client"
+    },
+    {
+      "key": "seller_central",
+      "label": "Seller Central",
+      "url": "https://sellercentral.amazon.com/home",
+      "group": "team"
+    },
+    {
+      "key": "ads_console",
+      "label": "Ads console",
+      "url": "https://advertising.amazon.com/cm/campaigns",
+      "group": "team"
+    },
+    {
+      "key": "inventory",
+      "label": "Inventory",
+      "url": "https://sellercentral.amazon.com/myinventory/inventory",
+      "group": "team"
+    },
+    {
+      "key": "ghl",
+      "label": "GHL",
+      "url": null,
+      "group": "team"
+    },
+    {
+      "key": "clickup",
+      "label": "ClickUp",
+      "url": null,
+      "group": "team"
+    },
+    {
+      "key": "drive_folder",
+      "label": "Drive folder",
+      "url": null,
+      "group": "team"
+    }
+  ],
+  "client_files": [],
+  "account_sheet": null,
+  "sheet_tabs": {},
+  "pages": [
+    {
+      "key": "audit",
+      "label": "PPC Audit",
+      "file": "audit.html",
+      "note": "Account overview, ad spend, strategy, search, ASINs, recommendations"
+    }
+  ]
+}
