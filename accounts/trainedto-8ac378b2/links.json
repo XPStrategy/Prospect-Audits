@@ -1,5 +1,7 @@
 {
   "company": "TrainedTo",
+  "brand": "Sidekick",
+  "report_date": "2026-10-20",
   "slug": "trainedto-8ac378b2",
   "folder_name": "TrainedTo - Malak Madi - October 19, 2026",
   "names": {
@@ -13,7 +15,7 @@
   "marketplace": "US",
   "window": "Last 30 Days (2026-09-19 to 2026-10-18)",
   "data_source": "Amazon Seller Central and Amazon Ads exports",
-  "updated": "2026-10-21T11:25:09+00:00",
+  "updated": "2026-10-21T11:53:31+00:00",
   "items": [
     {
       "key": "amazon_listing",
@@ -24,19 +26,19 @@
     {
       "key": "storefront",
       "label": "Amazon storefront",
-      "url": null,
+      "url": "https://www.amazon.com/stores/Sidekick/page/1EDF4968-1EF1-426F-A3E7-2C4DAA152A38",
       "group": "client"
     },
     {
       "key": "website",
       "label": "Website / Shopify",
-      "url": null,
+      "url": "https://sidekicktool.com/",
       "group": "client"
     },
     {
       "key": "account_sheet",
       "label": "Account data (Google Sheet)",
-      "url": null,
+      "url": "https://docs.google.com/spreadsheets/d/1UFNZAn_Rd3uSvtSfC9lwZL0PypqHsJuf5q6rXjWFXWM/edit",
       "group": "client"
     },
     {
@@ -77,7 +79,7 @@
     }
   ],
   "client_files": [],
-  "account_sheet": null,
+  "account_sheet": "https://docs.google.com/spreadsheets/d/1UFNZAn_Rd3uSvtSfC9lwZL0PypqHsJuf5q6rXjWFXWM/edit",
   "sheet_tabs": {},
   "pages": [
     {
@@ -91,5 +93,6 @@
       "label": "Global Scorecard",
       "file": "global.html"
     }
-  ]
+  ],
+  "hub_url": "https://xpstrategy.github.io/Prospect-Audits/accounts/trainedto-8ac378b2/"
 }

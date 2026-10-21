@@ -1,5 +1,7 @@
 {
   "company": "PowerNet",
+  "brand": "PowerNet",
+  "report_date": "2026-09-28",
   "slug": "powernet-b4ea9049",
   "folder_name": "PowerNet - September 28, 2026",
   "names": {
@@ -13,7 +15,7 @@
   "marketplace": "US",
   "window": "Last 30 Days (2026-08-29 to 2026-09-27)",
   "data_source": "Amazon Seller Central and Amazon Ads exports",
-  "updated": "2026-10-21T11:11:28+00:00",
+  "updated": "2026-10-21T11:53:32+00:00",
   "items": [
     {
       "key": "amazon_listing",
@@ -24,13 +26,13 @@
     {
       "key": "storefront",
       "label": "Amazon storefront",
-      "url": null,
+      "url": "https://www.amazon.com/stores/PowerNet/page/116B9038-14FB-4D26-86AD-0D5DD3C349A3",
       "group": "client"
     },
     {
       "key": "website",
       "label": "Website / Shopify",
-      "url": null,
+      "url": "https://trainingnets.com/",
       "group": "client"
     },
     {
@@ -86,5 +88,6 @@
       "file": "audit.html",
       "note": "Account overview, ad spend, strategy, search, ASINs, recommendations"
     }
-  ]
+  ],
+  "hub_url": "https://xpstrategy.github.io/Prospect-Audits/accounts/powernet-b4ea9049/"
 }
