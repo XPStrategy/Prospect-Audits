@@ -137,9 +137,6 @@ a.vd-a:not([href]) { color: #666666; font-weight: 500; cursor: default; text-dec
     });
     var ppc = (M.items || []).filter(function(i){ return i.key === 'ppc_sheet' && i.url; })[0];
     if (ppc) c += '<a class="card sheet" target="_blank" rel="noopener" href="' + e(ppc.url) + '"><b>PPC Audit sheet</b><span>The PPC Audit workbook as a Google Sheet</span></a>';
-    c += M.account_sheet
-      ? '<a class="card sheet" target="_blank" rel="noopener" href="' + e(M.account_sheet) + '"><b>Account data sheet</b><span>Links, overview, notes and every data tab</span></a>'
-      : '<div class="card off"><b>Account data sheet</b><span>Not linked yet</span></div>';
     document.getElementById('cards').innerHTML = c;
   }
   function head(){
