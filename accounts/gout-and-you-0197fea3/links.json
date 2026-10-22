@@ -37,7 +37,7 @@
     },
     {
       "key": "ppc_sheet",
-      "label": "PPC Audit (Google Sheet)",
+      "label": "Data Source",
       "url": "https://docs.google.com/spreadsheets/d/1RmB05jsZyZtLvg34lQmQx4OvbT5pj6G1ISFrTiBe6d8/edit",
       "group": "client"
     },
