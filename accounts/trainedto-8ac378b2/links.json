@@ -37,7 +37,7 @@
     },
     {
       "key": "ppc_sheet",
-      "label": "PPC Audit (Google Sheet)",
+      "label": "Data Source",
       "url": "https://docs.google.com/spreadsheets/d/1lNm2zmbdcWnJruUxXJqrAbu9zqSkwtQAHY40FBzbYqk/edit",
       "group": "client"
     },
@@ -51,24 +51,6 @@
       "key": "ads_console",
       "label": "Ads console",
       "url": "https://advertising.amazon.com/cm/campaigns",
-      "group": "team"
-    },
-    {
-      "key": "inventory",
-      "label": "Inventory",
-      "url": "https://sellercentral.amazon.com/myinventory/inventory",
-      "group": "team"
-    },
-    {
-      "key": "ghl",
-      "label": "GHL",
-      "url": null,
-      "group": "team"
-    },
-    {
-      "key": "clickup",
-      "label": "ClickUp",
-      "url": null,
       "group": "team"
     },
     {
