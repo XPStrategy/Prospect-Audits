@@ -409,7 +409,7 @@ document.querySelectorAll('.rp .lc').forEach(function(box){
     if (!box || !L.pages || !L.pages.length) return;
     var q = document.body.classList.contains('team') ? '?team=1' : '';
     var here = location.pathname.split('/').pop() || 'index.html';
-    var list = [{file: 'index.html', href: './', label: 'Account page'}].concat(
+    var list = [{file: 'index.html', href: './', label: 'Home'}].concat(
       L.pages.map(function(p){ return {file: p.file, href: p.file, label: p.label}; }));
     var h = '<span class="lb-h lb-h2">Pages</span>';
     list.forEach(function(it){
