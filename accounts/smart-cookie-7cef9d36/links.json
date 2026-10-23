@@ -1,0 +1,75 @@
+{
+  "company": "Smart Cookie",
+  "brand": "Smart Cookie",
+  "report_date": "2026-10-23",
+  "slug": "smart-cookie-7cef9d36",
+  "folder_name": "Smart Cookie - Spiro Koulouris - October 26, 2026",
+  "names": {
+    "base": "[AUDIT]-Smart Cookie - XP Strategy",
+    "html": "[AUDIT]-Smart Cookie - XP Strategy.html",
+    "account_sheet": "[AUDIT]-Smart Cookie - XP Strategy - Account Data.xlsx",
+    "ppc_workbook": "[AUDIT]-Smart Cookie - XP Strategy - PPC Audit.xlsx",
+    "notes_template": "[NOTES]-Smart Cookie - XP Strategy.xlsx",
+    "drive_folder": "Smart Cookie - Spiro Koulouris - October 26, 2026"
+  },
+  "marketplace": "US",
+  "window": "Last 30 Days (2026-09-22 to 2026-10-21)",
+  "data_source": "Amazon Seller Central and Amazon Ads exports supplied by the prospect",
+  "updated": "2026-10-23T10:57:46+00:00",
+  "items": [
+    {
+      "key": "amazon_listing",
+      "label": "Amazon listing",
+      "url": "https://www.amazon.com/dp/B01GU8GGQ2",
+      "group": "client"
+    },
+    {
+      "key": "storefront",
+      "label": "Amazon storefront",
+      "url": "https://www.amazon.com/stores/GoutandYou/page/13CA51E6-D802-4419-A692-29F067153B7A",
+      "group": "client"
+    },
+    {
+      "key": "website",
+      "label": "Website / Shopify",
+      "url": "https://shop.goutandyou.com/",
+      "group": "client"
+    },
+    {
+      "key": "ppc_sheet",
+      "label": "Data Source",
+      "url": null,
+      "group": "client"
+    },
+    {
+      "key": "seller_central",
+      "label": "Seller Central",
+      "url": "https://sellercentral.amazon.com/home",
+      "group": "team"
+    },
+    {
+      "key": "ads_console",
+      "label": "Ads console",
+      "url": "https://advertising.amazon.com/cm/campaigns",
+      "group": "team"
+    },
+    {
+      "key": "drive_folder",
+      "label": "Drive folder",
+      "url": "https://drive.google.com/drive/folders/1rLl7NshzQg2EJ4oEn8cqYeuuo_YIkcq5",
+      "group": "team"
+    }
+  ],
+  "client_files": [],
+  "account_sheet": null,
+  "sheet_tabs": {},
+  "pages": [
+    {
+      "key": "audit",
+      "label": "PPC Audit",
+      "file": "audit.html",
+      "note": "Account overview, ad spend, strategy, search, ASINs, recommendations"
+    }
+  ],
+  "hub_url": "https://xpstrategy.github.io/Prospect-Audits/accounts/smart-cookie-7cef9d36/"
+}
