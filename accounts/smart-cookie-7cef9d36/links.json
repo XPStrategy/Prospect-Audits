@@ -73,7 +73,8 @@
     {
       "key": "bundles",
       "label": "Virtual Bundles",
-      "file": "bundles.html"
+      "file": "bundles.html",
+      "note": "Bundle orders vs. other multi-product orders, product pairings, bundle ads, configuration"
     }
   ],
   "hub_url": "https://xpstrategy.github.io/Prospect-Audits/accounts/smart-cookie-7cef9d36/"
