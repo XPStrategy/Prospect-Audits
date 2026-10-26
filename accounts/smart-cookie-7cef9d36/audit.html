@@ -472,157 +472,62 @@ a.vd-a:not([href]) { color: #666666; font-weight: 500; cursor: default; text-dec
   
     <section id="recommendations">
       <h2>Recommendations</h2>
-      
-        <div class="rec-card">
-          <div class="rec-head">
-            <span class="rec-title">Efficiency</span>
-            <span class="rec-tags">
-              <span class="tag tag-exec">Execute</span>
-              <span class="tag prio-low">Priority: Low</span>
-            </span>
-          </div>
-          <div class="rec-body">
-            <p><strong>Observation.</strong> Account ACoS is 56.5% across $8,941 of ad spend and $15,811 of ad sales. 80.65% of spend sits in campaigns above 30% ACoS and 14.1% ($1,261) in 34 campaigns with no sales at all.</p>
-            <p><strong>Diagnosis.</strong> The half-of-spend waste estimate is directionally right if waste means spend that does not pay back; it is wrong if it means spend with zero orders, which is 8.1% of search-term spend.</p>
-            <p><strong>Recommendation.</strong> Separate the two problems on the call: cut the no-sales campaigns and the loss-making Retargeting first, then bring the &gt;30% ACoS campaigns back toward the 30.2% Top of Search benchmark through bids and placements.</p>
-          </div>
+      <div class="rec-card">
+        <div class="rec-head"><span class="rec-title">1. Sponsored Display</span></div>
+        <div class="rec-body">
+          <p><strong>Observation.</strong> Sponsored Display runs at 160.9% ACoS on $1,320 of spend (14.8% of ad spend) and returns only 5.2% of ad sales. CVR is 3.59% against 14.92% on Sponsored Products, and CPC is higher ($2.16 vs $1.93). The Retargeting campaigns inside it sit at 347.7% ACoS.</p>
+          <p><strong>Diagnosis.</strong> We are paying more per click for traffic that converts at a quarter of the Sponsored Products rate. The audiences and targets in use are reaching the wrong shoppers.</p>
+          <p><strong>Recommendation.</strong> Revisit every Sponsored Display campaign: audiences, product targets and bids. Pause what has no path to the target ACoS and rebuild the rest around audiences that already buy the category.</p>
         </div>
-        
-        <div class="rec-card">
-          <div class="rec-head">
-            <span class="rec-title">TACoS vs Objective</span>
-            <span class="rec-tags">
-              <span class="tag tag-conv">Client Conversation</span>
-              <span class="tag prio-low">Priority: Low</span>
-            </span>
-          </div>
-          <div class="rec-body">
-            <p><strong>Observation.</strong> TACoS is 20.4% on $43,852 total sales and 1,658 orders in the last 30 days.</p>
-            <p><strong>Diagnosis.</strong> Advertising carries about a fifth of revenue cost, double the 11.5% TACoS of Sep 2025.</p>
-            <p><strong>Recommendation.</strong> Agree a TACoS ceiling with the client before scaling; the efficiency fixes below are the route back without losing the sales gain.</p>
-          </div>
+      </div>
+      <div class="rec-card">
+        <div class="rec-head"><span class="rec-title">2. Automatic Campaigns</span></div>
+        <div class="rec-body">
+          <p><strong>Observation.</strong> Auto is the most efficient match type at 33.5% ACoS and $1.28 CPC, but it carries only $284, 4.5% of Sponsored Products spend.</p>
+          <p><strong>Diagnosis.</strong> Auto is converting at a lower cost than any manual match type, which suggests the negative targets inside the Auto campaigns are already doing their job. It is under-funded, not under-performing.</p>
+          <p><strong>Recommendation.</strong> Scale the Auto budgets gradually while watching ACoS, and keep harvesting the converting search terms into manual campaigns.</p>
         </div>
-        
-        <div class="rec-card">
-          <div class="rec-head">
-            <span class="rec-title">Brand Defense</span>
-            <span class="rec-tags">
-              <span class="tag tag-exec">Execute</span>
-              <span class="tag prio-high">Priority: High</span>
-            </span>
-          </div>
-          <div class="rec-body">
-            <p><strong>Observation.</strong> Branded spend is $879 (14.1% of SP spend) at 31.2% ACoS, returning 23.6% of SP sales. 2 branded queries (nutri gout supplement, gout and you pain relief cream) have no Exact coverage.</p>
-            <p><strong>Diagnosis.</strong> Brand defense is efficient; the gaps are small and fixable.</p>
-            <p><strong>Recommendation.</strong> Add Exact targets for the 2 gap queries and capture a branded SERP check before the call.</p>
-          </div>
+      </div>
+      <div class="rec-card">
+        <div class="rec-head"><span class="rec-title">3. Top of Search Placement</span></div>
+        <div class="rec-body">
+          <p><strong>Observation.</strong> Top of Search takes 24.5% of Sponsored Products spend and returns 42.4% of ad sales at 30.2% ACoS and 36.58% CVR. CPC is nearly the same across all placements: $2.62 Top of Search, $2.69 Rest of Search, $2.57 Product Pages.</p>
+          <p><strong>Diagnosis.</strong> Flat CPCs across placements mean the placement modifiers have most likely never been set. The best placement is bid the same as the weakest one (Product Pages at 92.4% ACoS).</p>
+          <p><strong>Recommendation.</strong> Be much more aggressive on Top of Search: raise the placement modifiers on the converting gout and cream campaigns, and pull back Product Pages exposure.</p>
         </div>
-        
-        <div class="rec-card">
-          <div class="rec-head">
-            <span class="rec-title">Search Opportunities</span>
-            <span class="rec-tags">
-              <span class="tag tag-exec">Execute</span>
-              <span class="tag prio-high">Priority: High</span>
-            </span>
-          </div>
-          <div class="rec-body">
-            <p><strong>Observation.</strong> 20 non-branded queries pass the signal filter: 2 convert in Auto with no Exact, 3 convert in manual or Sponsored Brands with no Exact, 7 show organic demand only, and 8 are already covered. Tart cherry extract has 39,362 searches with Auto-only coverage.</p>
-            <p><strong>Diagnosis.</strong> High-volume tart cherry and arthritis cream demand is reached only through Auto or not at all.</p>
-            <p><strong>Recommendation.</strong> Build Exact for the Auto and manual converters first, then test the 7 organic-only queries with modest budgets.</p>
-          </div>
+      </div>
+      <div class="rec-card">
+        <div class="rec-head"><span class="rec-title">4. Wasted Ad Spend</span></div>
+        <div class="rec-body">
+          <p><strong>Observation.</strong> Actionable waste is $551, 8.0% of target spend: 66 of 274 targets with 5+ clicks or $5+ spend and no orders.</p>
+          <p><strong>Diagnosis.</strong> There is waste to clean up, but it is nowhere near the ~50% the client estimated. The bigger cost is spend that converts at a high ACoS (Sponsored Display, Product Pages), not spend with zero orders.</p>
+          <p><strong>Recommendation.</strong> Pause or negate the 66 zero-order targets, and walk the client through where the real efficiency loss sits.</p>
         </div>
-        
-        <div class="rec-card">
-          <div class="rec-head">
-            <span class="rec-title">Negative Keyword Review</span>
-            <span class="rec-tags">
-              <span class="tag tag-exec">Execute</span>
-              <span class="tag prio-med">Priority: Medium</span>
-            </span>
-          </div>
-          <div class="rec-body">
-            <p><strong>Observation.</strong> 11 n-grams meet the significance floor at zero orders or above 100% ACoS, carrying $2,480 of spend. The uric acid flush cluster alone spent $340 at 324.6% ACoS and 2.65% CVR.</p>
-            <p><strong>Diagnosis.</strong> Flush, cleanse and remedy phrasing attracts a detox-intent shopper who does not buy a supplement.</p>
-            <p><strong>Recommendation.</strong> Add flush, cleanse and best remedy as negative phrase terms across the uric acid campaigns, keeping exact &#x27;uric acid&#x27; targets live.</p>
-          </div>
+      </div>
+      <div class="rec-card">
+        <div class="rec-head"><span class="rec-title">5. Search Opportunities</span></div>
+        <div class="rec-body">
+          <p><strong>Observation.</strong> High-volume searches are not covered where they should be: &#x27;tart cherry capsules&#x27; (48,305 searches) has no Exact target, &#x27;tart cherry extract&#x27; (39,362) is reached only through Auto, and &#x27;arthritis pain relief cream&#x27; (32,883) has no coverage at all. None of the three has Sponsored Brands coverage.</p>
+          <p><strong>Diagnosis.</strong> Shoppers already buy from these searches organically and through Auto, but we are not going after them with the targeting that controls bids and placement.</p>
+          <p><strong>Recommendation.</strong> Build Sponsored Products Exact and Sponsored Brands campaigns for these keywords and search terms, starting with the tart cherry terms.</p>
         </div>
-        
-        <div class="rec-card">
-          <div class="rec-head">
-            <span class="rec-title">Placement Allocation</span>
-            <span class="rec-tags">
-              <span class="tag tag-exec">Execute</span>
-              <span class="tag prio-med">Priority: Medium</span>
-            </span>
-          </div>
-          <div class="rec-body">
-            <p><strong>Observation.</strong> Top of Search takes 24.5% of SP spend and returns 42.4% of SP ad sales at 36.58% CVR and 30.2% ACoS. Product Pages take 36.4% of spend at 11.06% CVR and 92.4% ACoS.</p>
-            <p><strong>Diagnosis.</strong> Budget is weighted toward the weakest placement; product-page traffic converts at under a third of the search-top rate.</p>
-            <p><strong>Recommendation.</strong> Raise Top of Search modifiers on the converting gout and cream terms and lower product-page exposure on Product Targeting campaigns; this is the largest single efficiency lever in the account.</p>
-          </div>
+      </div>
+      <div class="rec-card">
+        <div class="rec-head"><span class="rec-title">6. ASIN Budget Allocation</span></div>
+        <div class="rec-body">
+          <p><strong>Observation.</strong> The BodyBuilder&#x27;s Cream Nuclear Strength (B0D5KFLMRR) runs at 211.0% ACoS and 4.72% CVR on $253 of spend. The bundle B0CNHB22LY runs at 94.1% ACoS on $516.</p>
+          <p><strong>Diagnosis.</strong> Budget is going to ASINs that cannot reach a profitable ACoS, while products such as the Extra Strength Menthol cream (27.3% ACoS) and Tart Cherry (44.1%) have room to take more.</p>
+          <p><strong>Recommendation.</strong> Decrease spend on the BodyBuilder&#x27;s Cream and the bundle, and redirect that budget to the ASINs closest to the target ACoS we agree with the client.</p>
         </div>
-        
-        <div class="rec-card">
-          <div class="rec-head">
-            <span class="rec-title">ASIN Conversion Opportunity</span>
-            <span class="rec-tags">
-              <span class="tag tag-conv">Client Conversation</span>
-              <span class="tag prio-med">Priority: Medium</span>
-            </span>
-          </div>
-          <div class="rec-body">
-            <p><strong>Observation.</strong> The BodyBuilder&#x27;s Cream (B0D5KFLMRR) converts at 4.72% against a 14.41% peer median and runs 211.0% ACoS on $253 of spend. The Arnica cream (B071Z3472D) carries the most ad spend ($2,683) at 57.2% ACoS.</p>
-            <p><strong>Diagnosis.</strong> The BodyBuilder&#x27;s Cream has a listing or offer problem, not a bidding problem.</p>
-            <p><strong>Recommendation.</strong> Pause paid traffic on B0D5KFLMRR until the listing is reworked, and rebalance Arnica cream spend toward Top of Search.</p>
-          </div>
+      </div>
+      <div class="rec-card">
+        <div class="rec-head"><span class="rec-title">7. Subscribe & Save</span></div>
+        <div class="rec-body">
+          <p><strong>Observation.</strong> Repeat purchase is healthy at 20.6% of Q3 customers (731 of 3,543). Subscribe &amp; Save is low: 6.6% of Jul-Sep buyers (195 of 2,947 buyer-months), and October so far is down to 4.7%.</p>
+          <p><strong>Diagnosis.</strong> Every repeat customer who is not on Subscribe &amp; Save comes back through search, so we pay ads again to reach someone who already buys from us. A larger S&amp;S base removes that cost.</p>
+          <p><strong>Recommendation.</strong> Push Subscribe &amp; Save on the core products (NutriGout, NutriGout Plus, Tart Cherry) with a target of at least 1,500 buyers on Subscribe &amp; Save.</p>
         </div>
-        
-        <div class="rec-card">
-          <div class="rec-head">
-            <span class="rec-title">Strategic Intent Mix</span>
-            <span class="rec-tags">
-              <span class="tag tag-exec">Execute</span>
-              <span class="tag prio-med">Priority: Medium</span>
-            </span>
-          </div>
-          <div class="rec-body">
-            <p><strong>Observation.</strong> Category &amp; Generic carries 52.3% of spend at 59.4% ACoS. Retargeting takes 11.9% ($1,067) at 347.7% ACoS and 2.07% CVR, and Offensive 6.2% at 133.6% ACoS. Sponsored Brands Video is 1.6% of spend ($145) at 20.22% CVR and 39.2% ACoS.</p>
-            <p><strong>Diagnosis.</strong> The upper funnel is funded through the least efficient channel (Sponsored Display retargeting) while the best-converting brand format, Sponsored Brands Video, is barely funded.</p>
-            <p><strong>Recommendation.</strong> Brand video growth plan: move the Retargeting budget into Sponsored Brands Video built per hero line (NutriGout, Tart Cherry, Arnica cream), on gout, uric acid and tart cherry category terms, then measure new-to-brand and branded-search lift before scaling.</p>
-          </div>
-        </div>
-        
-        <div class="rec-card">
-          <div class="rec-head">
-            <span class="rec-title">Repeat Purchase &amp; Retention</span>
-            <span class="rec-tags">
-              <span class="tag tag-conv">Client Conversation</span>
-              <span class="tag prio-high">Priority: High</span>
-            </span>
-          </div>
-          <div class="rec-body">
-            <p><strong>Observation.</strong> Q3 2026 repeat customer rate is 20.63% (731 of 3,543 customers), up from 16.03% in Q2, with an average repeat interval of 30.05 days, in line with a 60-capsule bottle. Repeat buyers drive 22.74% of sales ($30,205), and 79.37% of quarterly customers buy only once.</p>
-            <p><strong>Diagnosis.</strong> Retention works for the customers who come back on cycle, but the base is shrinking at both ends: At Risk customers grew 163.28% to 2,201 (21.42% of the base) while new-to-brand customers fell 39.61% to 2,150. The monthly report&#x27;s 4.0% was a within-month view and understated retention.</p>
-            <p><strong>Recommendation.</strong> Run a win-back program on the 2,201 At Risk customers (Brand Tailored Promotions and Sponsored Display audiences at the 30-day mark), retarget the 3,892 cart abandoners, and move one-time buyers onto Subscribe &amp; Save before their first bottle runs out.</p>
-          </div>
-        </div>
-        
-        <div class="rec-card">
-          <div class="rec-head">
-            <span class="rec-title">Subscribe &amp; Save</span>
-            <span class="rec-tags">
-              <span class="tag tag-exec">Execute</span>
-              <span class="tag prio-med">Priority: Medium</span>
-            </span>
-          </div>
-          <div class="rec-body">
-            <p><strong>Observation.</strong> Subscribe &amp; Save covers 6.6% of Jul-Sep buyers (195 of 2,947 buyer-months in AMC) and 6.4% of sales ($5,698). The rate held between 6.1% and 7.1% each month; NutriGout 500 mg sits at 7.4% and the Arnica cream at 3.7%.</p>
-            <p><strong>Diagnosis.</strong> For a product reordered every 30.05 days, a single-digit subscription rate leaves most repeat revenue to chance.</p>
-            <p><strong>Recommendation.</strong> Make Subscribe &amp; Save the default ask on NutriGout, NutriGout Plus and Tart Cherry: a higher S&amp;S discount tier, S&amp;S messaging in A+ and the brand video, and insert cards that point to subscribing.</p>
-          </div>
-        </div>
-        
+      </div>
     </section>
     
 </main>
