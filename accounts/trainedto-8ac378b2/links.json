@@ -74,6 +74,12 @@
       "key": "global",
       "label": "Global Scorecard",
       "file": "global.html"
+    },
+    {
+      "key": "ttc",
+      "label": "Time to Convert",
+      "file": "ttc.html",
+      "note": "Click-to-purchase timing on Sponsored Products, Jul 28 - Oct 26, 2026"
     }
   ],
   "hub_url": "https://xpstrategy.github.io/Prospect-Audits/accounts/trainedto-8ac378b2/"
