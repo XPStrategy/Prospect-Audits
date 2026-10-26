@@ -19,7 +19,7 @@
   "items": [
     {
       "key": "amazon_listing",
-      "label": "Amazon listing",
+      "label": "Best Seller Listing",
       "url": "https://www.amazon.com/dp/B01GU8GGQ2",
       "group": "client"
     },
