@@ -15,7 +15,7 @@
   "marketplace": "US",
   "window": "Last 30 Days (2026-09-30 to 2026-10-29)",
   "data_source": "Seller Central + Amazon Ads console exports",
-  "updated": "2026-11-02T14:05:57+00:00",
+  "updated": "2026-11-02T14:15:20+00:00",
   "items": [
     {
       "key": "amazon_listing",
@@ -38,7 +38,7 @@
     {
       "key": "ppc_sheet",
       "label": "Data Source",
-      "url": null,
+      "url": "https://docs.google.com/spreadsheets/d/1O-xXsnng5lFIQPSqr4PWKMVRLdSt6JA-qDomhv9FK5c/edit",
       "group": "client"
     },
     {
@@ -61,7 +61,7 @@
     }
   ],
   "client_files": [],
-  "account_sheet": null,
+  "account_sheet": "https://docs.google.com/spreadsheets/d/1aSgLC6payZixak1WRX6i86KKYFWa82Qu-SEE3Nv6twM/edit",
   "sheet_tabs": {},
   "pages": [
     {
