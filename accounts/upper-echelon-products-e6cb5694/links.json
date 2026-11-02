@@ -68,7 +68,78 @@
       "key": "audit",
       "label": "PPC Audit",
       "file": "audit.html",
-      "note": "Account overview, ad spend, strategy, search, ASINs, recommendations"
+      "note": "Account overview, ad spend, strategy, search, ASINs, recommendations",
+      "section": "audit"
+    },
+    {
+      "key": "category-everlasting-comfort",
+      "label": "Everlasting Comfort - Category Review",
+      "file": "category-everlasting-comfort.html",
+      "section": "category",
+      "note": "Seat cushions: category trend, competitors, search demand, buy box"
+    },
+    {
+      "key": "seo-everlasting-comfort",
+      "label": "Everlasting Comfort - SEO Review (Top 5)",
+      "file": "seo-everlasting-comfort.html",
+      "section": "category",
+      "note": "Listing and SEO review of the top 5 Everlasting Comfort best sellers"
+    },
+    {
+      "key": "category-repel-umbrella",
+      "label": "Repel Umbrella - Category Review",
+      "file": "category-repel-umbrella.html",
+      "section": "category",
+      "note": "Folding umbrellas: category trend, competitors, search demand, buy box"
+    },
+    {
+      "key": "seo-repel-umbrella",
+      "label": "Repel Umbrella - SEO Review (Top 5)",
+      "file": "seo-repel-umbrella.html",
+      "section": "category",
+      "note": "Listing and SEO review of the top 5 Repel Umbrella best sellers"
+    },
+    {
+      "key": "category-rain-mate",
+      "label": "Rain-Mate - Category Review",
+      "file": "category-rain-mate.html",
+      "section": "category",
+      "note": "Compact umbrellas: category trend, competitors, search demand, buy box"
+    },
+    {
+      "key": "seo-rain-mate",
+      "label": "Rain-Mate - SEO Review (Top 5)",
+      "file": "seo-rain-mate.html",
+      "section": "category",
+      "note": "Listing and SEO review of the top 5 Rain-Mate best sellers"
+    },
+    {
+      "key": "category-flux-phenom",
+      "label": "Flux Phenom - Category Review",
+      "file": "category-flux-phenom.html",
+      "section": "category",
+      "note": "Magnetic screen doors: category trend, competitors, search demand, buy box"
+    },
+    {
+      "key": "seo-flux-phenom",
+      "label": "Flux Phenom - SEO Review (Top 5)",
+      "file": "seo-flux-phenom.html",
+      "section": "category",
+      "note": "Listing and SEO review of the top 5 Flux Phenom best sellers"
+    },
+    {
+      "key": "category-clear-rear",
+      "label": "CLEAR REAR - Category Review",
+      "file": "category-clear-rear.html",
+      "section": "category",
+      "note": "Bidet attachments: category trend, competitors, search demand, buy box"
+    },
+    {
+      "key": "seo-clear-rear",
+      "label": "CLEAR REAR - SEO Review (Top 5)",
+      "file": "seo-clear-rear.html",
+      "section": "category",
+      "note": "Listing and SEO review of the top 5 CLEAR REAR best sellers"
     }
   ],
   "hub_url": "https://xpstrategy.github.io/Prospect-Audits/accounts/upper-echelon-products-e6cb5694/"
