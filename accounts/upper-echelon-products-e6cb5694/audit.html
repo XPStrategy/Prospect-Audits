@@ -494,4 +494,62 @@ a.vd-a:not([href]) { color: #666666; font-weight: 500; cursor: default; text-dec
   }
 })();
 </script>
-</body></html>
+<!--xp-nav--><style>
+.xpg { position: relative; display: inline-block; }
+.xpg > summary { list-style: none; cursor: pointer; }
+.xpg > summary::-webkit-details-marker { display: none; }
+.xpg > summary::after { content: " \25BE"; font-size: 10px; }
+.xpg-m { position: absolute; right: 0; top: calc(100% + 6px); z-index: 60; min-width: 220px; background: #fff;
+  border: 1px solid #d9dbe0; border-radius: 8px; box-shadow: 0 8px 24px rgba(0,0,0,.12); padding: 6px; }
+.xpg-m a, .xpg-m span { display: block; padding: 7px 10px; border-radius: 6px; font-size: 12.5px; font-weight: 600;
+  color: #111318; text-decoration: none; white-space: nowrap; }
+.xpg-m a:hover { background: #fff3e0; }
+.xpg-m span.cur { background: #111318; color: #fff; }
+.xpn-bar { position: relative; z-index: 70; background: #fff; border-bottom: 1px solid #e3e5e8; box-shadow: 0 2px 8px rgba(0,0,0,.04);
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; }
+.xpn-in { max-width: 1120px; margin: 0 auto; padding: 9px 16px; display: flex; flex-wrap: wrap; align-items: center; gap: 8px; justify-content: flex-end; }
+.xpn-h { font-size: 10.5px; letter-spacing: .14em; font-weight: 700; color: #6b6f76; margin-right: 4px; }
+.xpn .lk, .xpn-in .lk { display: inline-block; font-size: 12px; font-weight: 700; padding: 5px 12px; border-radius: 14px; border: 1px solid #111318;
+  color: #111318; background: #fff; text-decoration: none; white-space: nowrap; }
+.xpn .lk-here, .xpn-in .lk-here { background: #111318; color: #fff; }
+.xpn-hub { display: inline-flex; margin-left: 6px; padding-left: 12px; border-left: 1px solid #d9dbe0; }
+.xpn-hub a { font-size: 12px; font-weight: 700; padding: 5px 12px; border-radius: 14px; background: #111318; color: #fff; text-decoration: none; }
+@media print { .xpn-bar, .xpg { display: none !important; } }
+</style><script>
+(function(){
+  var CFG = {"pages": [{"key": "audit", "label": "PPC Audit", "file": "audit.html", "note": "Account overview, ad spend, strategy, search, ASINs, recommendations", "section": "audit"}, {"key": "category-everlasting-comfort", "label": "Everlasting Comfort", "nav": "Everlasting Comfort", "file": "category-everlasting-comfort.html", "section": "category", "kind": "page", "note": "Seat cushions \u00b7 category trend, competitors, search demand, buy box"}, {"key": "seo-everlasting-comfort", "label": "Everlasting Comfort", "nav": "Everlasting Comfort", "file": "seo-everlasting-comfort.html", "section": "seo", "kind": "page", "note": "Top 5 best sellers \u00b7 listing content, keyword placement, organic rank, conversion"}, {"key": "category-repel-umbrella", "label": "Repel Umbrella", "nav": "Repel Umbrella", "file": "category-repel-umbrella.html", "section": "category", "kind": "page", "note": "Folding umbrellas \u00b7 category trend, competitors, search demand, buy box"}, {"key": "seo-repel-umbrella", "label": "Repel Umbrella", "nav": "Repel Umbrella", "file": "seo-repel-umbrella.html", "section": "seo", "kind": "page", "note": "Top 5 best sellers \u00b7 listing content, keyword placement, organic rank, conversion"}, {"key": "category-rain-mate", "label": "Rain-Mate", "nav": "Rain-Mate", "file": "category-rain-mate.html", "section": "category", "kind": "page", "note": "Compact umbrellas \u00b7 category trend, competitors, search demand, buy box"}, {"key": "seo-rain-mate", "label": "Rain-Mate", "nav": "Rain-Mate", "file": "seo-rain-mate.html", "section": "seo", "kind": "page", "note": "Top 5 best sellers \u00b7 listing content, keyword placement, organic rank, conversion"}, {"key": "category-flux-phenom", "label": "Flux Phenom", "nav": "Flux Phenom", "file": "category-flux-phenom.html", "section": "category", "kind": "page", "note": "Magnetic screen doors \u00b7 category trend, competitors, search demand, buy box"}, {"key": "seo-flux-phenom", "label": "Flux Phenom", "nav": "Flux Phenom", "file": "seo-flux-phenom.html", "section": "seo", "kind": "page", "note": "Top 5 best sellers \u00b7 listing content, keyword placement, organic rank, conversion"}, {"key": "category-clear-rear", "label": "CLEAR REAR", "nav": "CLEAR REAR", "file": "category-clear-rear.html", "section": "category", "kind": "page", "note": "Bidet attachments \u00b7 category trend, competitors, search demand, buy box"}, {"key": "seo-clear-rear", "label": "CLEAR REAR", "nav": "CLEAR REAR", "file": "seo-clear-rear.html", "section": "seo", "kind": "page", "note": "Top 5 best sellers \u00b7 listing content, keyword placement, organic rank, conversion"}], "sections": [["category", "Category Reviews"], ["seo", "SEO Reviews"], ["amc", "AMC Reviews"], ["inventory", "Inventory Forecast"], ["other", "Other Reports"]], "hub": "../../"};
+  var here = location.pathname.split('/').pop() || 'index.html';
+  var q = /[?&]team=1/.test(location.search) ? '?team=1' : '';
+  function e(t){ var d = document.createElement('div'); d.textContent = t || ''; return d.innerHTML; }
+  function link(label, file){ return file === here ? '<span class="lk lk-here">' + e(label) + '</span>' : '<a class="lk lk-page" href="' + e(file) + q + '">' + e(label) + '</a>'; }
+  function group(label, items){
+    if (!items.length) return '';
+    var cur = items.some(function(p){ return p.file === here; });
+    var m = items.map(function(p){ var n = p.nav || p.label;
+      return p.file === here ? '<span class="cur">' + e(n) + '</span>' : '<a href="' + e(p.file) + q + '">' + e(n) + '</a>'; }).join('');
+    return '<details class="xpg"><summary class="lk ' + (cur ? 'lk-here' : 'lk-page') + '">' + e(label) + '</summary><div class="xpg-m">' + m + '</div></details>';
+  }
+  function html(pages){
+    var h = '<span class="lb-h lb-h2 xpn-h">PAGES</span>' + (here === 'index.html' ? '<span class="lk lk-here">Home</span>' : '<a class="lk lk-page" href="./' + q + '">&larr; Home</a>');
+    pages.filter(function(p){ return !p.section || p.section === 'audit'; }).forEach(function(p){ h += link(p.label, p.file); });
+    CFG.sections.forEach(function(s){ h += group(s[1], pages.filter(function(p){ return p.section === s[0]; })); });
+    return h + '<span class="xpn-hub"><a href="' + e(CFG.hub) + '">All accounts</a></span>';
+  }
+  function draw(pages){
+    var box = document.querySelector('.lb-pages');
+    if (box) { box.innerHTML = html(pages); box.classList.add('xpn'); box.style.display = 'inline-flex'; box.style.alignItems = 'center'; box.style.gap = '8px'; box.style.flexWrap = 'wrap'; return; }
+    var bar = document.getElementById('xpn-bar');
+    if (!bar) { bar = document.createElement('div'); bar.id = 'xpn-bar'; bar.className = 'xpn-bar'; document.body.insertBefore(bar, document.body.firstChild); }
+    bar.innerHTML = '<div class="xpn-in">' + html(pages) + '</div>';
+  }
+  function boot(){
+    var P = CFG.pages; draw(P);
+    var box = document.querySelector('.lb-pages');
+    if (box && window.MutationObserver) new MutationObserver(function(){ if (!box.querySelector('.xpg') && !box.getAttribute('data-xpn')) { box.setAttribute('data-xpn','1'); draw(P); box.removeAttribute('data-xpn'); } }).observe(box, {childList: true});
+    document.addEventListener('click', function(ev){ document.querySelectorAll('details.xpg[open]').forEach(function(d){ if (!d.contains(ev.target)) d.removeAttribute('open'); }); });
+    if (location.protocol.indexOf('http') === 0) fetch('links.json', {cache: 'no-store'}).then(function(r){ return r.ok ? r.json() : null; })
+      .then(function(j){ if (j && j.pages) { P = j.pages; draw(P); } }).catch(function(){});
+  }
+  if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', boot); else boot();
+})();
+</script><!--/xp-nav--></body></html>

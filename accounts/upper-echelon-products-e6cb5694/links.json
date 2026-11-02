@@ -73,73 +73,93 @@
     },
     {
       "key": "category-everlasting-comfort",
-      "label": "Everlasting Comfort - Category Review",
+      "label": "Everlasting Comfort",
+      "nav": "Everlasting Comfort",
       "file": "category-everlasting-comfort.html",
       "section": "category",
-      "note": "Seat cushions: category trend, competitors, search demand, buy box"
+      "kind": "page",
+      "note": "Seat cushions \u00b7 category trend, competitors, search demand, buy box"
     },
     {
       "key": "seo-everlasting-comfort",
-      "label": "Everlasting Comfort - SEO Review (Top 5)",
+      "label": "Everlasting Comfort",
+      "nav": "Everlasting Comfort",
       "file": "seo-everlasting-comfort.html",
-      "section": "category",
-      "note": "Listing and SEO review of the top 5 Everlasting Comfort best sellers"
+      "section": "seo",
+      "kind": "page",
+      "note": "Top 5 best sellers \u00b7 listing content, keyword placement, organic rank, conversion"
     },
     {
       "key": "category-repel-umbrella",
-      "label": "Repel Umbrella - Category Review",
+      "label": "Repel Umbrella",
+      "nav": "Repel Umbrella",
       "file": "category-repel-umbrella.html",
       "section": "category",
-      "note": "Folding umbrellas: category trend, competitors, search demand, buy box"
+      "kind": "page",
+      "note": "Folding umbrellas \u00b7 category trend, competitors, search demand, buy box"
     },
     {
       "key": "seo-repel-umbrella",
-      "label": "Repel Umbrella - SEO Review (Top 5)",
+      "label": "Repel Umbrella",
+      "nav": "Repel Umbrella",
       "file": "seo-repel-umbrella.html",
-      "section": "category",
-      "note": "Listing and SEO review of the top 5 Repel Umbrella best sellers"
+      "section": "seo",
+      "kind": "page",
+      "note": "Top 5 best sellers \u00b7 listing content, keyword placement, organic rank, conversion"
     },
     {
       "key": "category-rain-mate",
-      "label": "Rain-Mate - Category Review",
+      "label": "Rain-Mate",
+      "nav": "Rain-Mate",
       "file": "category-rain-mate.html",
       "section": "category",
-      "note": "Compact umbrellas: category trend, competitors, search demand, buy box"
+      "kind": "page",
+      "note": "Compact umbrellas \u00b7 category trend, competitors, search demand, buy box"
     },
     {
       "key": "seo-rain-mate",
-      "label": "Rain-Mate - SEO Review (Top 5)",
+      "label": "Rain-Mate",
+      "nav": "Rain-Mate",
       "file": "seo-rain-mate.html",
-      "section": "category",
-      "note": "Listing and SEO review of the top 5 Rain-Mate best sellers"
+      "section": "seo",
+      "kind": "page",
+      "note": "Top 5 best sellers \u00b7 listing content, keyword placement, organic rank, conversion"
     },
     {
       "key": "category-flux-phenom",
-      "label": "Flux Phenom - Category Review",
+      "label": "Flux Phenom",
+      "nav": "Flux Phenom",
       "file": "category-flux-phenom.html",
       "section": "category",
-      "note": "Magnetic screen doors: category trend, competitors, search demand, buy box"
+      "kind": "page",
+      "note": "Magnetic screen doors \u00b7 category trend, competitors, search demand, buy box"
     },
     {
       "key": "seo-flux-phenom",
-      "label": "Flux Phenom - SEO Review (Top 5)",
+      "label": "Flux Phenom",
+      "nav": "Flux Phenom",
       "file": "seo-flux-phenom.html",
-      "section": "category",
-      "note": "Listing and SEO review of the top 5 Flux Phenom best sellers"
+      "section": "seo",
+      "kind": "page",
+      "note": "Top 5 best sellers \u00b7 listing content, keyword placement, organic rank, conversion"
     },
     {
       "key": "category-clear-rear",
-      "label": "CLEAR REAR - Category Review",
+      "label": "CLEAR REAR",
+      "nav": "CLEAR REAR",
       "file": "category-clear-rear.html",
       "section": "category",
-      "note": "Bidet attachments: category trend, competitors, search demand, buy box"
+      "kind": "page",
+      "note": "Bidet attachments \u00b7 category trend, competitors, search demand, buy box"
     },
     {
       "key": "seo-clear-rear",
-      "label": "CLEAR REAR - SEO Review (Top 5)",
+      "label": "CLEAR REAR",
+      "nav": "CLEAR REAR",
       "file": "seo-clear-rear.html",
-      "section": "category",
-      "note": "Listing and SEO review of the top 5 CLEAR REAR best sellers"
+      "section": "seo",
+      "kind": "page",
+      "note": "Top 5 best sellers \u00b7 listing content, keyword placement, organic rank, conversion"
     }
   ],
   "hub_url": "https://xpstrategy.github.io/Prospect-Audits/accounts/upper-echelon-products-e6cb5694/"
