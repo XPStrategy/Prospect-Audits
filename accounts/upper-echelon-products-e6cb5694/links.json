@@ -68,8 +68,272 @@
       "key": "audit",
       "label": "PPC Audit",
       "file": "audit.html",
-      "note": "Account overview, ad spend, strategy, search, ASINs, recommendations",
+      "note": "Account overview, ad spend, strategy, ASINs, recommendations",
       "section": "audit"
+    },
+    {
+      "key": "amc-everlasting-comfort-new-to-brand",
+      "label": "Everlasting Comfort \u00b7 New-to-Brand",
+      "nav": "Everlasting Comfort \u00b7 New-to-Brand",
+      "file": "amc-everlasting-comfort-new-to-brand.html",
+      "section": "amc",
+      "kind": "page",
+      "brand": "Everlasting Comfort",
+      "note": "Jan \u2013 Sep 2026 \u00b7 NTB customers and orders by month and ad type, and the search terms that bring them",
+      "page": "New-to-Brand"
+    },
+    {
+      "key": "amc-everlasting-comfort-repeat-purchase",
+      "label": "Everlasting Comfort \u00b7 Repeat Purchase",
+      "nav": "Everlasting Comfort \u00b7 Repeat Purchase",
+      "file": "amc-everlasting-comfort-repeat-purchase.html",
+      "section": "amc",
+      "kind": "page",
+      "brand": "Everlasting Comfort",
+      "note": "Jan \u2013 Sep 2026 \u00b7 Repeat and one-time buyers by month and by ASIN",
+      "page": "Repeat Purchase"
+    },
+    {
+      "key": "amc-everlasting-comfort-path-to-conversion",
+      "label": "Everlasting Comfort \u00b7 Path to Conversion",
+      "nav": "Everlasting Comfort \u00b7 Path to Conversion",
+      "file": "amc-everlasting-comfort-path-to-conversion.html",
+      "section": "amc",
+      "kind": "page",
+      "brand": "Everlasting Comfort",
+      "note": "Jan \u2013 Sep 2026 \u00b7 Ad types buyers saw in the 30 days before purchase, window total",
+      "page": "Path to Conversion"
+    },
+    {
+      "key": "amc-everlasting-comfort-time-to-conversion",
+      "label": "Everlasting Comfort \u00b7 Time to Conversion",
+      "nav": "Everlasting Comfort \u00b7 Time to Conversion",
+      "file": "amc-everlasting-comfort-time-to-conversion.html",
+      "section": "amc",
+      "kind": "page",
+      "brand": "Everlasting Comfort",
+      "note": "Jan \u2013 Sep 2026 \u00b7 Time from ad click to purchase by ad type",
+      "page": "Time to Conversion"
+    },
+    {
+      "key": "amc-repel-umbrella-new-to-brand",
+      "label": "Repel Umbrella \u00b7 New-to-Brand",
+      "nav": "Repel Umbrella \u00b7 New-to-Brand",
+      "file": "amc-repel-umbrella-new-to-brand.html",
+      "section": "amc",
+      "kind": "page",
+      "brand": "Repel Umbrella",
+      "note": "Jan \u2013 Sep 2026 \u00b7 NTB customers and orders by month and ad type, and the search terms that bring them",
+      "page": "New-to-Brand"
+    },
+    {
+      "key": "amc-repel-umbrella-repeat-purchase",
+      "label": "Repel Umbrella \u00b7 Repeat Purchase",
+      "nav": "Repel Umbrella \u00b7 Repeat Purchase",
+      "file": "amc-repel-umbrella-repeat-purchase.html",
+      "section": "amc",
+      "kind": "page",
+      "brand": "Repel Umbrella",
+      "note": "Jan \u2013 Sep 2026 \u00b7 Repeat and one-time buyers by month and by ASIN",
+      "page": "Repeat Purchase"
+    },
+    {
+      "key": "amc-repel-umbrella-path-to-conversion",
+      "label": "Repel Umbrella \u00b7 Path to Conversion",
+      "nav": "Repel Umbrella \u00b7 Path to Conversion",
+      "file": "amc-repel-umbrella-path-to-conversion.html",
+      "section": "amc",
+      "kind": "page",
+      "brand": "Repel Umbrella",
+      "note": "Jan \u2013 Sep 2026 \u00b7 Ad types buyers saw in the 30 days before purchase, window total",
+      "page": "Path to Conversion"
+    },
+    {
+      "key": "amc-repel-umbrella-time-to-conversion",
+      "label": "Repel Umbrella \u00b7 Time to Conversion",
+      "nav": "Repel Umbrella \u00b7 Time to Conversion",
+      "file": "amc-repel-umbrella-time-to-conversion.html",
+      "section": "amc",
+      "kind": "page",
+      "brand": "Repel Umbrella",
+      "note": "Jan \u2013 Sep 2026 \u00b7 Time from ad click to purchase by ad type",
+      "page": "Time to Conversion"
+    },
+    {
+      "key": "amc-flux-phenom-new-to-brand",
+      "label": "Flux Phenom \u00b7 New-to-Brand",
+      "nav": "Flux Phenom \u00b7 New-to-Brand",
+      "file": "amc-flux-phenom-new-to-brand.html",
+      "section": "amc",
+      "kind": "page",
+      "brand": "Flux Phenom",
+      "note": "Jan \u2013 Sep 2026 \u00b7 NTB customers and orders by month and ad type, and the search terms that bring them",
+      "page": "New-to-Brand"
+    },
+    {
+      "key": "amc-flux-phenom-repeat-purchase",
+      "label": "Flux Phenom \u00b7 Repeat Purchase",
+      "nav": "Flux Phenom \u00b7 Repeat Purchase",
+      "file": "amc-flux-phenom-repeat-purchase.html",
+      "section": "amc",
+      "kind": "page",
+      "brand": "Flux Phenom",
+      "note": "Jan \u2013 Sep 2026 \u00b7 Repeat and one-time buyers by month and by ASIN",
+      "page": "Repeat Purchase"
+    },
+    {
+      "key": "amc-flux-phenom-path-to-conversion",
+      "label": "Flux Phenom \u00b7 Path to Conversion",
+      "nav": "Flux Phenom \u00b7 Path to Conversion",
+      "file": "amc-flux-phenom-path-to-conversion.html",
+      "section": "amc",
+      "kind": "page",
+      "brand": "Flux Phenom",
+      "note": "Jan \u2013 Sep 2026 \u00b7 Ad types buyers saw in the 30 days before purchase, window total",
+      "page": "Path to Conversion"
+    },
+    {
+      "key": "amc-flux-phenom-time-to-conversion",
+      "label": "Flux Phenom \u00b7 Time to Conversion",
+      "nav": "Flux Phenom \u00b7 Time to Conversion",
+      "file": "amc-flux-phenom-time-to-conversion.html",
+      "section": "amc",
+      "kind": "page",
+      "brand": "Flux Phenom",
+      "note": "Jan \u2013 Sep 2026 \u00b7 Time from ad click to purchase by ad type",
+      "page": "Time to Conversion"
+    },
+    {
+      "key": "amc-rain-mate-new-to-brand",
+      "label": "Rain-Mate \u00b7 New-to-Brand",
+      "nav": "Rain-Mate \u00b7 New-to-Brand",
+      "file": "amc-rain-mate-new-to-brand.html",
+      "section": "amc",
+      "kind": "page",
+      "brand": "Rain-Mate",
+      "note": "Jan \u2013 Sep 2026 \u00b7 NTB customers and orders by month and ad type, and the search terms that bring them",
+      "page": "New-to-Brand"
+    },
+    {
+      "key": "amc-rain-mate-repeat-purchase",
+      "label": "Rain-Mate \u00b7 Repeat Purchase",
+      "nav": "Rain-Mate \u00b7 Repeat Purchase",
+      "file": "amc-rain-mate-repeat-purchase.html",
+      "section": "amc",
+      "kind": "page",
+      "brand": "Rain-Mate",
+      "note": "Jan \u2013 Sep 2026 \u00b7 Repeat and one-time buyers by month and by ASIN",
+      "page": "Repeat Purchase"
+    },
+    {
+      "key": "amc-rain-mate-path-to-conversion",
+      "label": "Rain-Mate \u00b7 Path to Conversion",
+      "nav": "Rain-Mate \u00b7 Path to Conversion",
+      "file": "amc-rain-mate-path-to-conversion.html",
+      "section": "amc",
+      "kind": "page",
+      "brand": "Rain-Mate",
+      "note": "Jan \u2013 Sep 2026 \u00b7 Ad types buyers saw in the 30 days before purchase, window total",
+      "page": "Path to Conversion"
+    },
+    {
+      "key": "amc-rain-mate-time-to-conversion",
+      "label": "Rain-Mate \u00b7 Time to Conversion",
+      "nav": "Rain-Mate \u00b7 Time to Conversion",
+      "file": "amc-rain-mate-time-to-conversion.html",
+      "section": "amc",
+      "kind": "page",
+      "brand": "Rain-Mate",
+      "note": "Jan \u2013 Sep 2026 \u00b7 Time from ad click to purchase by ad type",
+      "page": "Time to Conversion"
+    },
+    {
+      "key": "amc-clear-rear-new-to-brand",
+      "label": "CLEAR REAR \u00b7 New-to-Brand",
+      "nav": "CLEAR REAR \u00b7 New-to-Brand",
+      "file": "amc-clear-rear-new-to-brand.html",
+      "section": "amc",
+      "kind": "page",
+      "brand": "CLEAR REAR",
+      "note": "Jan \u2013 Sep 2026 \u00b7 NTB customers and orders by month and ad type, and the search terms that bring them",
+      "page": "New-to-Brand"
+    },
+    {
+      "key": "amc-clear-rear-repeat-purchase",
+      "label": "CLEAR REAR \u00b7 Repeat Purchase",
+      "nav": "CLEAR REAR \u00b7 Repeat Purchase",
+      "file": "amc-clear-rear-repeat-purchase.html",
+      "section": "amc",
+      "kind": "page",
+      "brand": "CLEAR REAR",
+      "note": "Jan \u2013 Sep 2026 \u00b7 Repeat and one-time buyers by month and by ASIN",
+      "page": "Repeat Purchase"
+    },
+    {
+      "key": "amc-clear-rear-path-to-conversion",
+      "label": "CLEAR REAR \u00b7 Path to Conversion",
+      "nav": "CLEAR REAR \u00b7 Path to Conversion",
+      "file": "amc-clear-rear-path-to-conversion.html",
+      "section": "amc",
+      "kind": "page",
+      "brand": "CLEAR REAR",
+      "note": "Jan \u2013 Sep 2026 \u00b7 Ad types buyers saw in the 30 days before purchase, window total",
+      "page": "Path to Conversion"
+    },
+    {
+      "key": "amc-clear-rear-time-to-conversion",
+      "label": "CLEAR REAR \u00b7 Time to Conversion",
+      "nav": "CLEAR REAR \u00b7 Time to Conversion",
+      "file": "amc-clear-rear-time-to-conversion.html",
+      "section": "amc",
+      "kind": "page",
+      "brand": "CLEAR REAR",
+      "note": "Jan \u2013 Sep 2026 \u00b7 Time from ad click to purchase by ad type",
+      "page": "Time to Conversion"
+    },
+    {
+      "key": "amc-cafe-du-chateau-new-to-brand",
+      "label": "Cafe Du Chateau \u00b7 New-to-Brand",
+      "nav": "Cafe Du Chateau \u00b7 New-to-Brand",
+      "file": "amc-cafe-du-chateau-new-to-brand.html",
+      "section": "amc",
+      "kind": "page",
+      "brand": "Cafe Du Chateau",
+      "note": "Jan \u2013 Sep 2026 \u00b7 NTB customers and orders by month and ad type, and the search terms that bring them",
+      "page": "New-to-Brand"
+    },
+    {
+      "key": "amc-cafe-du-chateau-repeat-purchase",
+      "label": "Cafe Du Chateau \u00b7 Repeat Purchase",
+      "nav": "Cafe Du Chateau \u00b7 Repeat Purchase",
+      "file": "amc-cafe-du-chateau-repeat-purchase.html",
+      "section": "amc",
+      "kind": "page",
+      "brand": "Cafe Du Chateau",
+      "note": "Jan \u2013 Sep 2026 \u00b7 Repeat and one-time buyers by month and by ASIN",
+      "page": "Repeat Purchase"
+    },
+    {
+      "key": "amc-cafe-du-chateau-path-to-conversion",
+      "label": "Cafe Du Chateau \u00b7 Path to Conversion",
+      "nav": "Cafe Du Chateau \u00b7 Path to Conversion",
+      "file": "amc-cafe-du-chateau-path-to-conversion.html",
+      "section": "amc",
+      "kind": "page",
+      "brand": "Cafe Du Chateau",
+      "note": "Jan \u2013 Sep 2026 \u00b7 Ad types buyers saw in the 30 days before purchase, window total",
+      "page": "Path to Conversion"
+    },
+    {
+      "key": "amc-cafe-du-chateau-time-to-conversion",
+      "label": "Cafe Du Chateau \u00b7 Time to Conversion",
+      "nav": "Cafe Du Chateau \u00b7 Time to Conversion",
+      "file": "amc-cafe-du-chateau-time-to-conversion.html",
+      "section": "amc",
+      "kind": "page",
+      "brand": "Cafe Du Chateau",
+      "note": "Jan \u2013 Sep 2026 \u00b7 Time from ad click to purchase by ad type",
+      "page": "Time to Conversion"
     },
     {
       "key": "category-everlasting-comfort",
@@ -78,7 +342,7 @@
       "file": "category-everlasting-comfort.html",
       "section": "category",
       "kind": "page",
-      "note": "Seat cushions · category trend, competitors, search demand, buy box"
+      "note": "Seat cushions \u00b7 category trend, competitors, search demand, buy box"
     },
     {
       "key": "seo-everlasting-comfort",
@@ -87,7 +351,7 @@
       "file": "seo-everlasting-comfort.html",
       "section": "seo",
       "kind": "page",
-      "note": "Top 5 best sellers · listing content, keyword placement, organic rank, conversion"
+      "note": "Top 5 best sellers \u00b7 listing content, keyword placement, organic rank, conversion"
     },
     {
       "key": "category-repel-umbrella",
@@ -96,7 +360,7 @@
       "file": "category-repel-umbrella.html",
       "section": "category",
       "kind": "page",
-      "note": "Folding umbrellas · category trend, competitors, search demand, buy box"
+      "note": "Folding umbrellas \u00b7 category trend, competitors, search demand, buy box"
     },
     {
       "key": "seo-repel-umbrella",
@@ -105,7 +369,7 @@
       "file": "seo-repel-umbrella.html",
       "section": "seo",
       "kind": "page",
-      "note": "Top 5 best sellers · listing content, keyword placement, organic rank, conversion"
+      "note": "Top 5 best sellers \u00b7 listing content, keyword placement, organic rank, conversion"
     },
     {
       "key": "category-rain-mate",
@@ -114,7 +378,7 @@
       "file": "category-rain-mate.html",
       "section": "category",
       "kind": "page",
-      "note": "Compact umbrellas · category trend, competitors, search demand, buy box"
+      "note": "Compact umbrellas \u00b7 category trend, competitors, search demand, buy box"
     },
     {
       "key": "seo-rain-mate",
@@ -123,7 +387,7 @@
       "file": "seo-rain-mate.html",
       "section": "seo",
       "kind": "page",
-      "note": "Top 5 best sellers · listing content, keyword placement, organic rank, conversion"
+      "note": "Top 5 best sellers \u00b7 listing content, keyword placement, organic rank, conversion"
     },
     {
       "key": "category-flux-phenom",
@@ -132,7 +396,7 @@
       "file": "category-flux-phenom.html",
       "section": "category",
       "kind": "page",
-      "note": "Magnetic screen doors · category trend, competitors, search demand, buy box"
+      "note": "Magnetic screen doors \u00b7 category trend, competitors, search demand, buy box"
     },
     {
       "key": "seo-flux-phenom",
@@ -141,7 +405,7 @@
       "file": "seo-flux-phenom.html",
       "section": "seo",
       "kind": "page",
-      "note": "Top 5 best sellers · listing content, keyword placement, organic rank, conversion"
+      "note": "Top 5 best sellers \u00b7 listing content, keyword placement, organic rank, conversion"
     },
     {
       "key": "category-clear-rear",
@@ -150,7 +414,7 @@
       "file": "category-clear-rear.html",
       "section": "category",
       "kind": "page",
-      "note": "Bidet attachments · category trend, competitors, search demand, buy box"
+      "note": "Bidet attachments \u00b7 category trend, competitors, search demand, buy box"
     },
     {
       "key": "seo-clear-rear",
@@ -159,272 +423,85 @@
       "file": "seo-clear-rear.html",
       "section": "seo",
       "kind": "page",
-      "note": "Top 5 best sellers · listing content, keyword placement, organic rank, conversion"
+      "note": "Top 5 best sellers \u00b7 listing content, keyword placement, organic rank, conversion"
     },
     {
-      "key": "amc-everlasting-comfort-new-to-brand",
-      "label": "Everlasting Comfort · New-to-Brand",
-      "nav": "Everlasting Comfort · New-to-Brand",
-      "file": "amc-everlasting-comfort-new-to-brand.html",
-      "section": "amc",
+      "key": "sqp-everlasting-comfort",
+      "label": "Everlasting Comfort",
+      "nav": "Everlasting Comfort",
+      "file": "sqp-everlasting-comfort.html",
+      "section": "sqp",
       "kind": "page",
-      "brand": "Everlasting Comfort",
-      "note": "Jan – Sep 2026 · NTB customers and orders by month and ad type, and the search terms that bring them",
-      "page": "New-to-Brand"
+      "note": "Brand Analytics Jul - Sep 2026 \u00b7 funnel share, query trends, paid coverage gaps"
     },
     {
-      "key": "amc-everlasting-comfort-repeat-purchase",
-      "label": "Everlasting Comfort · Repeat Purchase",
-      "nav": "Everlasting Comfort · Repeat Purchase",
-      "file": "amc-everlasting-comfort-repeat-purchase.html",
-      "section": "amc",
+      "key": "sqp-repel-umbrella",
+      "label": "Repel Umbrella",
+      "nav": "Repel Umbrella",
+      "file": "sqp-repel-umbrella.html",
+      "section": "sqp",
       "kind": "page",
-      "brand": "Everlasting Comfort",
-      "note": "Jan – Sep 2026 · Repeat and one-time buyers by month and by ASIN",
-      "page": "Repeat Purchase"
+      "note": "Brand Analytics Jul - Sep 2026 \u00b7 funnel share, query trends, paid coverage gaps"
     },
     {
-      "key": "amc-everlasting-comfort-path-to-conversion",
-      "label": "Everlasting Comfort · Path to Conversion",
-      "nav": "Everlasting Comfort · Path to Conversion",
-      "file": "amc-everlasting-comfort-path-to-conversion.html",
-      "section": "amc",
+      "key": "sqp-rain-mate",
+      "label": "Rain-Mate",
+      "nav": "Rain-Mate",
+      "file": "sqp-rain-mate.html",
+      "section": "sqp",
       "kind": "page",
-      "brand": "Everlasting Comfort",
-      "note": "Jan – Sep 2026 · Ad types buyers saw in the 30 days before purchase, window total",
-      "page": "Path to Conversion"
+      "note": "Brand Analytics Jul - Sep 2026 \u00b7 funnel share, query trends, paid coverage gaps"
     },
     {
-      "key": "amc-everlasting-comfort-time-to-conversion",
-      "label": "Everlasting Comfort · Time to Conversion",
-      "nav": "Everlasting Comfort · Time to Conversion",
-      "file": "amc-everlasting-comfort-time-to-conversion.html",
-      "section": "amc",
+      "key": "sqp-flux-phenom",
+      "label": "Flux Phenom",
+      "nav": "Flux Phenom",
+      "file": "sqp-flux-phenom.html",
+      "section": "sqp",
       "kind": "page",
-      "brand": "Everlasting Comfort",
-      "note": "Jan – Sep 2026 · Time from ad click to purchase by ad type",
-      "page": "Time to Conversion"
+      "note": "Brand Analytics Jul - Sep 2026 \u00b7 funnel share, query trends, paid coverage gaps"
     },
     {
-      "key": "amc-repel-umbrella-new-to-brand",
-      "label": "Repel Umbrella · New-to-Brand",
-      "nav": "Repel Umbrella · New-to-Brand",
-      "file": "amc-repel-umbrella-new-to-brand.html",
-      "section": "amc",
+      "key": "sqp-clear-rear",
+      "label": "CLEAR REAR",
+      "nav": "CLEAR REAR",
+      "file": "sqp-clear-rear.html",
+      "section": "sqp",
       "kind": "page",
-      "brand": "Repel Umbrella",
-      "note": "Jan – Sep 2026 · NTB customers and orders by month and ad type, and the search terms that bring them",
-      "page": "New-to-Brand"
-    },
-    {
-      "key": "amc-repel-umbrella-repeat-purchase",
-      "label": "Repel Umbrella · Repeat Purchase",
-      "nav": "Repel Umbrella · Repeat Purchase",
-      "file": "amc-repel-umbrella-repeat-purchase.html",
-      "section": "amc",
-      "kind": "page",
-      "brand": "Repel Umbrella",
-      "note": "Jan – Sep 2026 · Repeat and one-time buyers by month and by ASIN",
-      "page": "Repeat Purchase"
-    },
-    {
-      "key": "amc-repel-umbrella-path-to-conversion",
-      "label": "Repel Umbrella · Path to Conversion",
-      "nav": "Repel Umbrella · Path to Conversion",
-      "file": "amc-repel-umbrella-path-to-conversion.html",
-      "section": "amc",
-      "kind": "page",
-      "brand": "Repel Umbrella",
-      "note": "Jan – Sep 2026 · Ad types buyers saw in the 30 days before purchase, window total",
-      "page": "Path to Conversion"
-    },
-    {
-      "key": "amc-repel-umbrella-time-to-conversion",
-      "label": "Repel Umbrella · Time to Conversion",
-      "nav": "Repel Umbrella · Time to Conversion",
-      "file": "amc-repel-umbrella-time-to-conversion.html",
-      "section": "amc",
-      "kind": "page",
-      "brand": "Repel Umbrella",
-      "note": "Jan – Sep 2026 · Time from ad click to purchase by ad type",
-      "page": "Time to Conversion"
-    },
-    {
-      "key": "amc-flux-phenom-new-to-brand",
-      "label": "Flux Phenom · New-to-Brand",
-      "nav": "Flux Phenom · New-to-Brand",
-      "file": "amc-flux-phenom-new-to-brand.html",
-      "section": "amc",
-      "kind": "page",
-      "brand": "Flux Phenom",
-      "note": "Jan – Sep 2026 · NTB customers and orders by month and ad type, and the search terms that bring them",
-      "page": "New-to-Brand"
-    },
-    {
-      "key": "amc-flux-phenom-repeat-purchase",
-      "label": "Flux Phenom · Repeat Purchase",
-      "nav": "Flux Phenom · Repeat Purchase",
-      "file": "amc-flux-phenom-repeat-purchase.html",
-      "section": "amc",
-      "kind": "page",
-      "brand": "Flux Phenom",
-      "note": "Jan – Sep 2026 · Repeat and one-time buyers by month and by ASIN",
-      "page": "Repeat Purchase"
-    },
-    {
-      "key": "amc-flux-phenom-path-to-conversion",
-      "label": "Flux Phenom · Path to Conversion",
-      "nav": "Flux Phenom · Path to Conversion",
-      "file": "amc-flux-phenom-path-to-conversion.html",
-      "section": "amc",
-      "kind": "page",
-      "brand": "Flux Phenom",
-      "note": "Jan – Sep 2026 · Ad types buyers saw in the 30 days before purchase, window total",
-      "page": "Path to Conversion"
-    },
-    {
-      "key": "amc-flux-phenom-time-to-conversion",
-      "label": "Flux Phenom · Time to Conversion",
-      "nav": "Flux Phenom · Time to Conversion",
-      "file": "amc-flux-phenom-time-to-conversion.html",
-      "section": "amc",
-      "kind": "page",
-      "brand": "Flux Phenom",
-      "note": "Jan – Sep 2026 · Time from ad click to purchase by ad type",
-      "page": "Time to Conversion"
-    },
-    {
-      "key": "amc-rain-mate-new-to-brand",
-      "label": "Rain-Mate · New-to-Brand",
-      "nav": "Rain-Mate · New-to-Brand",
-      "file": "amc-rain-mate-new-to-brand.html",
-      "section": "amc",
-      "kind": "page",
-      "brand": "Rain-Mate",
-      "note": "Jan – Sep 2026 · NTB customers and orders by month and ad type, and the search terms that bring them",
-      "page": "New-to-Brand"
-    },
-    {
-      "key": "amc-rain-mate-repeat-purchase",
-      "label": "Rain-Mate · Repeat Purchase",
-      "nav": "Rain-Mate · Repeat Purchase",
-      "file": "amc-rain-mate-repeat-purchase.html",
-      "section": "amc",
-      "kind": "page",
-      "brand": "Rain-Mate",
-      "note": "Jan – Sep 2026 · Repeat and one-time buyers by month and by ASIN",
-      "page": "Repeat Purchase"
-    },
-    {
-      "key": "amc-rain-mate-path-to-conversion",
-      "label": "Rain-Mate · Path to Conversion",
-      "nav": "Rain-Mate · Path to Conversion",
-      "file": "amc-rain-mate-path-to-conversion.html",
-      "section": "amc",
-      "kind": "page",
-      "brand": "Rain-Mate",
-      "note": "Jan – Sep 2026 · Ad types buyers saw in the 30 days before purchase, window total",
-      "page": "Path to Conversion"
-    },
-    {
-      "key": "amc-rain-mate-time-to-conversion",
-      "label": "Rain-Mate · Time to Conversion",
-      "nav": "Rain-Mate · Time to Conversion",
-      "file": "amc-rain-mate-time-to-conversion.html",
-      "section": "amc",
-      "kind": "page",
-      "brand": "Rain-Mate",
-      "note": "Jan – Sep 2026 · Time from ad click to purchase by ad type",
-      "page": "Time to Conversion"
-    },
-    {
-      "key": "amc-clear-rear-new-to-brand",
-      "label": "CLEAR REAR · New-to-Brand",
-      "nav": "CLEAR REAR · New-to-Brand",
-      "file": "amc-clear-rear-new-to-brand.html",
-      "section": "amc",
-      "kind": "page",
-      "brand": "CLEAR REAR",
-      "note": "Jan – Sep 2026 · NTB customers and orders by month and ad type, and the search terms that bring them",
-      "page": "New-to-Brand"
-    },
-    {
-      "key": "amc-clear-rear-repeat-purchase",
-      "label": "CLEAR REAR · Repeat Purchase",
-      "nav": "CLEAR REAR · Repeat Purchase",
-      "file": "amc-clear-rear-repeat-purchase.html",
-      "section": "amc",
-      "kind": "page",
-      "brand": "CLEAR REAR",
-      "note": "Jan – Sep 2026 · Repeat and one-time buyers by month and by ASIN",
-      "page": "Repeat Purchase"
-    },
-    {
-      "key": "amc-clear-rear-path-to-conversion",
-      "label": "CLEAR REAR · Path to Conversion",
-      "nav": "CLEAR REAR · Path to Conversion",
-      "file": "amc-clear-rear-path-to-conversion.html",
-      "section": "amc",
-      "kind": "page",
-      "brand": "CLEAR REAR",
-      "note": "Jan – Sep 2026 · Ad types buyers saw in the 30 days before purchase, window total",
-      "page": "Path to Conversion"
-    },
-    {
-      "key": "amc-clear-rear-time-to-conversion",
-      "label": "CLEAR REAR · Time to Conversion",
-      "nav": "CLEAR REAR · Time to Conversion",
-      "file": "amc-clear-rear-time-to-conversion.html",
-      "section": "amc",
-      "kind": "page",
-      "brand": "CLEAR REAR",
-      "note": "Jan – Sep 2026 · Time from ad click to purchase by ad type",
-      "page": "Time to Conversion"
-    },
-    {
-      "key": "amc-cafe-du-chateau-new-to-brand",
-      "label": "Cafe Du Chateau · New-to-Brand",
-      "nav": "Cafe Du Chateau · New-to-Brand",
-      "file": "amc-cafe-du-chateau-new-to-brand.html",
-      "section": "amc",
-      "kind": "page",
-      "brand": "Cafe Du Chateau",
-      "note": "Jan – Sep 2026 · NTB customers and orders by month and ad type, and the search terms that bring them",
-      "page": "New-to-Brand"
-    },
-    {
-      "key": "amc-cafe-du-chateau-repeat-purchase",
-      "label": "Cafe Du Chateau · Repeat Purchase",
-      "nav": "Cafe Du Chateau · Repeat Purchase",
-      "file": "amc-cafe-du-chateau-repeat-purchase.html",
-      "section": "amc",
-      "kind": "page",
-      "brand": "Cafe Du Chateau",
-      "note": "Jan – Sep 2026 · Repeat and one-time buyers by month and by ASIN",
-      "page": "Repeat Purchase"
-    },
-    {
-      "key": "amc-cafe-du-chateau-path-to-conversion",
-      "label": "Cafe Du Chateau · Path to Conversion",
-      "nav": "Cafe Du Chateau · Path to Conversion",
-      "file": "amc-cafe-du-chateau-path-to-conversion.html",
-      "section": "amc",
-      "kind": "page",
-      "brand": "Cafe Du Chateau",
-      "note": "Jan – Sep 2026 · Ad types buyers saw in the 30 days before purchase, window total",
-      "page": "Path to Conversion"
-    },
-    {
-      "key": "amc-cafe-du-chateau-time-to-conversion",
-      "label": "Cafe Du Chateau · Time to Conversion",
-      "nav": "Cafe Du Chateau · Time to Conversion",
-      "file": "amc-cafe-du-chateau-time-to-conversion.html",
-      "section": "amc",
-      "kind": "page",
-      "brand": "Cafe Du Chateau",
-      "note": "Jan – Sep 2026 · Time from ad click to purchase by ad type",
-      "page": "Time to Conversion"
+      "note": "Brand Analytics Jul - Sep 2026 \u00b7 funnel share, query trends, paid coverage gaps"
     }
   ],
-  "hub_url": "https://xpstrategy.github.io/Prospect-Audits/accounts/upper-echelon-products-e6cb5694/"
+  "hub_url": "https://xpstrategy.github.io/Prospect-Audits/accounts/upper-echelon-products-e6cb5694/",
+  "brands": [
+    {
+      "name": "Everlasting Comfort",
+      "best": "https://www.amazon.com/dp/B01EBDV9BU",
+      "store": "https://www.amazon.com/stores/EverlastingComfort/page/73874DA8-1CBE-46B9-B7B9-01111A03C0B6",
+      "site": "https://everlastingcomfort.com"
+    },
+    {
+      "name": "Repel Umbrella",
+      "best": "https://www.amazon.com/dp/B0160HYB8S",
+      "store": "https://www.amazon.com/stores/RepelUmbrella/page/95CB5FA7-0059-491D-A708-456496449FA4",
+      "site": null
+    },
+    {
+      "name": "Rain-Mate",
+      "best": "https://www.amazon.com/dp/B01LZ75ROQ",
+      "store": "https://www.amazon.com/stores/Rain-Mate/page/F3DB6BB4-84DD-412F-A24D-8F3AB5171671",
+      "site": null
+    },
+    {
+      "name": "Flux Phenom",
+      "best": "https://www.amazon.com/dp/B01ESSA9VO",
+      "store": "https://www.amazon.com/stores/FluxPhenom/page/A835FF4E-DD84-42F4-BF8B-65464FAEE95C",
+      "site": null
+    },
+    {
+      "name": "CLEAR REAR",
+      "best": "https://www.amazon.com/dp/B0H6KLSCGR",
+      "store": "https://www.amazon.com/stores/ClearRear/page/0324042A-32A5-49FF-993E-CE6EA52CF1EF",
+      "site": null
+    }
+  ]
 }
