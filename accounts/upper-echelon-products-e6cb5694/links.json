@@ -1,0 +1,75 @@
+{
+  "company": "Upper Echelon Products",
+  "brand": "Upper Echelon Products",
+  "report_date": "2026-11-02",
+  "slug": "upper-echelon-products-e6cb5694",
+  "folder_name": "Upper Echelon Products - UEP - November 2, 2026",
+  "names": {
+    "base": "[AUDIT]-Upper Echelon Products - XP Strategy",
+    "html": "[AUDIT]-Upper Echelon Products - XP Strategy.html",
+    "account_sheet": "[AUDIT]-Upper Echelon Products - XP Strategy - Account Data.xlsx",
+    "ppc_workbook": "[AUDIT]-Upper Echelon Products - XP Strategy - PPC Audit.xlsx",
+    "notes_template": "[NOTES]-Upper Echelon Products - XP Strategy.xlsx",
+    "drive_folder": "Upper Echelon Products - UEP - November 2, 2026"
+  },
+  "marketplace": "US",
+  "window": "Last 30 Days (2026-09-30 to 2026-10-29)",
+  "data_source": "Seller Central + Amazon Ads console exports",
+  "updated": "2026-11-02T14:05:57+00:00",
+  "items": [
+    {
+      "key": "amazon_listing",
+      "label": "Best Seller Listing",
+      "url": "https://www.amazon.com/dp/B01EBDV9BU",
+      "group": "client"
+    },
+    {
+      "key": "storefront",
+      "label": "Amazon storefront",
+      "url": "https://www.amazon.com/stores/EverlastingComfort/page/73874DA8-1CBE-46B9-B7B9-01111A03C0B6",
+      "group": "client"
+    },
+    {
+      "key": "website",
+      "label": "Website / Shopify",
+      "url": "https://everlastingcomfort.com",
+      "group": "client"
+    },
+    {
+      "key": "ppc_sheet",
+      "label": "Data Source",
+      "url": null,
+      "group": "client"
+    },
+    {
+      "key": "seller_central",
+      "label": "Seller Central",
+      "url": "https://sellercentral.amazon.com/home",
+      "group": "team"
+    },
+    {
+      "key": "ads_console",
+      "label": "Ads console",
+      "url": "https://advertising.amazon.com/cm/campaigns",
+      "group": "team"
+    },
+    {
+      "key": "drive_folder",
+      "label": "Drive folder",
+      "url": "https://drive.google.com/drive/folders/1djdk-G9QVUe8FV7t78Cq9QeW8-8VsezM",
+      "group": "team"
+    }
+  ],
+  "client_files": [],
+  "account_sheet": null,
+  "sheet_tabs": {},
+  "pages": [
+    {
+      "key": "audit",
+      "label": "PPC Audit",
+      "file": "audit.html",
+      "note": "Account overview, ad spend, strategy, search, ASINs, recommendations"
+    }
+  ],
+  "hub_url": "https://xpstrategy.github.io/Prospect-Audits/accounts/upper-echelon-products-e6cb5694/"
+}
