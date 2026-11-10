@@ -1,0 +1,74 @@
+{
+  "company": "Balaveda",
+  "brand": "Balaveda",
+  "report_date": "2026-11-10",
+  "slug": "balaveda-4ea5b998",
+  "folder_name": "Balaveda, 11-10-2026",
+  "names": {
+    "base": "[AUDIT]-Balaveda - XP Strategy",
+    "html": "[AUDIT]-Balaveda - XP Strategy.html",
+    "account_sheet": "[AUDIT]-Balaveda - XP Strategy - Account Data.xlsx",
+    "ppc_workbook": "[AUDIT]-Balaveda - XP Strategy - PPC Audit.xlsx",
+    "notes_template": "[NOTES]-Balaveda - XP Strategy.xlsx",
+    "drive_folder": "Balaveda, 11-10-2026"
+  },
+  "marketplace": "US",
+  "window": "Jan 2024 - Sep 2026 (market estimates)",
+  "data_source": "Amazon Seller Central and Amazon Ads exports",
+  "updated": "2026-11-10T18:44:05+00:00",
+  "items": [
+    {
+      "key": "amazon_listing",
+      "label": "Best Seller Listing",
+      "url": "https://www.amazon.com/dp/B0GHPWZZ9S",
+      "group": "client"
+    },
+    {
+      "key": "storefront",
+      "label": "Amazon storefront",
+      "url": null,
+      "group": "client"
+    },
+    {
+      "key": "website",
+      "label": "Website / Shopify",
+      "url": "https://www.balaveda.com/",
+      "group": "client"
+    },
+    {
+      "key": "ppc_sheet",
+      "label": "Data Source",
+      "url": null,
+      "group": "client"
+    },
+    {
+      "key": "seller_central",
+      "label": "Seller Central",
+      "url": "https://sellercentral.amazon.com/home",
+      "group": "team"
+    },
+    {
+      "key": "ads_console",
+      "label": "Ads console",
+      "url": "https://advertising.amazon.com/cm/campaigns",
+      "group": "team"
+    },
+    {
+      "key": "drive_folder",
+      "label": "Drive folder",
+      "url": "https://drive.google.com/drive/folders/16PCtfI5ZMXGMWCjASHWjfprxHnrd-bBM",
+      "group": "team"
+    }
+  ],
+  "client_files": [],
+  "account_sheet": null,
+  "sheet_tabs": {},
+  "pages": [
+    {
+      "key": "category",
+      "label": "Category Scorecard",
+      "file": "category.html"
+    }
+  ],
+  "hub_url": "https://xpstrategy.github.io/Prospect-Audits/accounts/balaveda-4ea5b998/"
+}
