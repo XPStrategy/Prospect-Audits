@@ -40,7 +40,11 @@ a.hubl { font-weight: 600; text-decoration: none; border-bottom: 2px solid #FF99
 a .pill.on:hover { background: #FF9900; color: #fff; }
 .pill.st-client { border-color: #2e7d4f; color: #2e7d4f; }
 .pill.st-lost { background: #f1f2f4; }
-tr.lost td { opacity: .6; }
+.pill.st-paid { border-color: #111318; color: #111318; }
+tr.more td { border-top: 1px dashed #e6e4de; }
+tbody.acct tr:not(:last-child) td:not([rowspan]) { border-bottom: 0; }
+b.an { display: block; font-size: 11px; text-transform: uppercase; letter-spacing: .4px; color: #666666; font-weight: 600; }
+tbody.lost td { opacity: .6; }
 .na { color: #666666; }
 .sub { font-size: 12px; color: #666666; }
 .wrap { overflow-x: auto; }
@@ -50,6 +54,8 @@ tr.lost td { opacity: .6; }
 .kpi span { font-size:12px; color:#666666; }
 @media (max-width: 720px) {
   table, thead, tbody, tr, td { display: block; width: 100%; }
+  tbody.acct { border-bottom: 1px solid #e6e4de; }
+  tr.more { padding-top: 4px; }
   thead { display: none; }
   tr { border-bottom: 1px solid #e6e4de; padding: 8px 0; }
   td { border: 0; padding: 4px 12px; }
@@ -114,24 +120,30 @@ def rows(repo):
             sheet=lj.get("account_sheet") or items.get("ppc_sheet"),
             listing=items.get("amazon_listing"),
             status=st.get("status", "prospect"), client_hub=st.get("client_hub"), note=st.get("note", ""),
+            group=st.get("group"), group_name=st.get("group_name"), created=st.get("created") or lj.get("report_date") or "",
         ))
-    out.sort(key=lambda r: (r["date"], r["company"].lower()), reverse=True)
-    return out
+    # merge audits of the same account into one row: audits = [oldest ... newest]
+    merged, seen = [], {}
+    for r in sorted(out, key=lambda r: (r["created"], r["slug"])):
+        k = r["group"] or r["slug"]
+        if k in seen:
+            seen[k]["audits"].append(r)
+            continue
+        row = dict(r, audits=[r])
+        seen[k] = row
+        merged.append(row)
+    for row in merged:
+        last = row["audits"][-1]
+        row.update(date=max(a["date"] for a in row["audits"]), status=last["status"], client_hub=last["client_hub"],
+                   company=row["group_name"] or row["company"])
+    merged.sort(key=lambda r: (r["date"], r["company"].lower()), reverse=True)
+    return merged
 
 
 def build_page(rs, style, logo, today):
     trs, types_present, months = [], set(), set()
-    for r in rs:
-        h = f"../accounts/{r['slug']}/"
-        sub = []
-        if r["brand"] and r["brand"].lower() != r["company"].lower():
-            sub.append(f"Brand: {esc(r['brand'])}")
-        if r["note"]:
-            sub.append(esc(r["note"]))
-        sub_html = f'<div class="sub">{" · ".join(sub)}</div>' if sub else ""
-
-        g = r["groups"]
-        types_present.update(g)
+    def cells(a, h, multi):
+        g = a["groups"]
         ppc = (f'<a href="{h}{esc(g["audit"][0])}"><span class="pill on">Open audit</span></a>'
                if "audit" in g else '<span class="pill">Not published</span>')
         other = []
@@ -140,48 +152,75 @@ def build_page(rs, style, logo, today):
             href = h + files[0] if len(files) == 1 else h  # many pages of one type -> the account hub lists them
             label += f" · {len(files)}" if len(files) > 1 else ""
             other.append(f'<a href="{esc(href)}"><span class="pill on">{esc(label)}</span></a>')
-        other_html = "".join(other) or '<span class="na">None</span>'
-
         links = []
-        if r["sheet"]:
-            links.append(f'<a href="{esc(r["sheet"])}" target="_blank" rel="noopener">Data sheet</a>')
-        if r["drive"]:
-            links.append(f'<a href="{esc(r["drive"])}" target="_blank" rel="noopener">Drive</a>')
-        if r["listing"]:
-            links.append(f'<a href="{esc(r["listing"])}" target="_blank" rel="noopener">Amazon</a>')
-        links_html = " · ".join(links) or '<span class="na">None</span>'
+        if a["sheet"]:
+            links.append(f'<a href="{esc(a["sheet"])}" target="_blank" rel="noopener">Data sheet</a>')
+        if a["drive"]:
+            links.append(f'<a href="{esc(a["drive"])}" target="_blank" rel="noopener">Drive</a>')
+        if a["listing"]:
+            links.append(f'<a href="{esc(a["listing"])}" target="_blank" rel="noopener">Amazon</a>')
+        return dict(ppc=ppc, other="".join(other) or '<span class="na">None</span>',
+                    links=" · ".join(links) or '<span class="na">None</span>', g=g)
+
+    for r in rs:
+        audits = r["audits"]
+        multi = len(audits) > 1
+        h0 = f"../accounts/{audits[-1]['slug']}/"
+        sub = []
+        if not multi and r["brand"] and r["brand"].lower() != r["company"].lower():
+            sub.append(f"Brand: {esc(r['brand'])}")
+        if r["note"] and not multi:
+            sub.append(esc(r["note"]))
+        if multi:
+            sub.append(" · ".join(f'<a href="../accounts/{esc(a["slug"])}/">Audit {i} hub</a>'
+                                  for i, a in enumerate(audits, 1)))
+        sub_html = f'<div class="sub">{" · ".join(sub)}</div>' if sub else ""
+
+        lines = []
+        for i, a in enumerate(audits, 1):
+            h = f"../accounts/{a['slug']}/"
+            c = cells(a, h, multi)
+            types_present.update(c["g"])
+            tag = f'<b class="an">Audit {i}</b>' if multi else ""
+            lines.append(
+                f'<td class="dt" data-l="Audit date">{tag}{esc(fmt_date(a["created"] if multi else a["date"]))}</td>'
+                f'<td data-l="PPC Audit">{c["ppc"]}</td>'
+                f'<td data-l="Other reports">{c["other"]}</td>'
+                f'<td data-l="Data window"><span class="sub">{esc(a["window"])}</span></td>'
+                f'<td data-l="Links">{c["links"]}</td>')
+        types_row = sorted(set().union(*(a["groups"] for a in audits)))
 
         if r["status"] == "client":
             st_html = '<span class="pill st-client">Client</span>'
             if r["client_hub"]:
                 st_html = f'<a href="{esc(r["client_hub"])}" target="_blank" rel="noopener">{st_html}</a>'
+        elif r["status"] == "paid":
+            st_html = '<span class="pill st-paid">Paid audit</span>'
         elif r["status"] == "lost":
             st_html = '<span class="pill st-lost">Closed</span>'
         else:
             st_html = '<span class="pill">Prospect</span>'
 
-        month = r["date"][:7]
-        months.add(month)
-        q = " ".join([r["company"], r["brand"], r["note"]]).lower()
+        ms = sorted({a["date"][:7] for a in audits} | {a["created"][:7] for a in audits if multi})
+        months.update(ms)
+        q = " ".join([r["company"]] + [x for a in audits for x in (a["company"], a["brand"], a["note"])]).lower()
+        n = len(lines)
+        rs_attr = f' rowspan="{n}"' if n > 1 else ""
+        body = (f'<tr><td data-l="Account"{rs_attr}><a class="hubl" href="{h0}">{esc(r["company"])}</a>{sub_html}</td>'
+                f'{lines[0]}<td data-l="Status"{rs_attr}>{st_html}</td></tr>'
+                + "".join(f'<tr class="more">{l}</tr>' for l in lines[1:]))
         trs.append(
-            f'<tr data-slug="{esc(r["slug"])}" data-q="{esc(q)}" data-types="|{"|".join(sorted(g))}|" '
-            f'data-st="{esc(r["status"])}" data-m="{esc(month)}">'
-            f'<td data-l="Account"><a class="hubl" href="{h}">{esc(r["company"])}</a>{sub_html}</td>'
-            f'<td class="dt" data-l="Audit date">{esc(fmt_date(r["date"]))}</td>'
-            f'<td data-l="PPC Audit">{ppc}</td>'
-            f'<td data-l="Other reports">{other_html}</td>'
-            f'<td data-l="Data window"><span class="sub">{esc(r["window"])}</span></td>'
-            f'<td data-l="Links">{links_html}</td>'
-            f'<td data-l="Status">{st_html}</td></tr>')
+            f'<tbody class="acct" data-slug="{esc(r["slug"])}" data-q="{esc(q)}" data-types="|{"|".join(types_row)}|" '
+            f'data-st="{esc(r["status"])}" data-m="|{esc("|".join(ms))}|">{body}</tbody>')
 
-    opts = "".join(f'<option value="{esc(r["slug"])}">{esc(r["company"])}'
-                   f'{" — " + esc(r["note"]) if r["note"] else ""}</option>'
+    opts = "".join(f'<option value="{esc(r["audits"][-1]["slug"])}">{esc(r["company"])}</option>'
                    for r in sorted(rs, key=lambda r: r["company"].lower()))
     topts = "".join(f'<option value="{t}">Report: {esc(TYPE_LABEL.get(t, t.title()))}</option>'
                     for t in sorted(types_present, key=lambda t: TYPE_ORDER.get(t, 99)))
     mopts = "".join(f'<option value="{m}">{datetime.strptime(m, "%Y-%m").strftime("%B %Y")}</option>'
                     for m in sorted((m for m in months if re.match(r"\d{4}-\d{2}$", m)), reverse=True))
-    n_ppc = sum(1 for r in rs if "audit" in r["groups"])
+    n_audits = sum(len(r["audits"]) for r in rs)
+    n_ppc = sum(1 for r in rs for a in r["audits"] if "audit" in a["groups"])
     n_client = sum(1 for r in rs if r["status"] == "client")
     latest = rs[0]["date"] if rs else ""
 
@@ -196,8 +235,8 @@ def build_page(rs, style, logo, today):
 <header class="xph-hero"><div class="xph-in"><div class="xph-brand"><img src="{logo}" alt="XP Strategy"/><div class="xph-title"><strong>XP Strategy Analysis</strong> &middot; Prospect Audits</div></div><div class="xph-meta"><div>&nbsp;</div><div>Marketplace: US</div><div>Report Created: {today}</div></div></div></header>
 <main><h2>Prospect Audits</h2>
 <div class="kpis">
-  <div class="kpi"><b>{len(rs)}</b><span>Audit hubs published</span></div>
-  <div class="kpi"><b>{n_ppc}</b><span>With a PPC audit</span></div>
+  <div class="kpi"><b>{len(rs)}</b><span>Accounts ({n_audits} audits)</span></div>
+  <div class="kpi"><b>{n_ppc}</b><span>PPC audits</span></div>
   <div class="kpi"><b>{n_client}</b><span>Now clients</span></div>
   <div class="kpi"><b>{esc(fmt_date(latest))}</b><span>Latest audit</span></div>
 </div>
@@ -205,30 +244,30 @@ def build_page(rs, style, logo, today):
   <select id="pick" aria-label="Open an audit hub"><option value="">Open an audit hub…</option>{opts}</select>
   <select id="ty" aria-label="Report"><option value="">Report: all</option>{topts}</select>
   <select id="mo" aria-label="Month"><option value="">Month: all</option>{mopts}</select>
-  <select id="st" aria-label="Status"><option value="">All audits</option><option value="prospect">Prospects</option><option value="client">Now clients</option><option value="lost">Closed</option></select>
+  <select id="st" aria-label="Status"><option value="">All audits</option><option value="prospect">Prospects</option><option value="paid">Paid audits</option><option value="client">Now clients</option><option value="lost">Closed</option></select>
   <input id="q" type="search" placeholder="Filter accounts" aria-label="Filter accounts">
   <span class="count" id="count"></span>
 </div>
 <div class="wrap"><table><thead><tr><th>Account</th><th>Audit date</th><th>PPC Audit</th><th>Other reports</th><th>Data window</th><th>Links</th><th>Status</th></tr></thead>
-<tbody>{"".join(trs)}</tbody></table></div>
-<p class="source" style="font-size:12px;color:#666666;margin-top:8px">Source: each account's links.json in the Prospect-Audits repo, rebuilt on every publish; status from tools/hub_status.json. Newest audit first. Client status links to the account's Monthly-Audits hub.</p>
+{"".join(trs)}</table></div>
+<p class="source" style="font-size:12px;color:#666666;margin-top:8px">Source: each account's links.json in the Prospect-Audits repo, rebuilt on every publish; status and grouping from tools/hub_status.json. Newest audit first; accounts audited more than once show Audit 1, Audit 2 in date order. Client status links to the account's Monthly-Audits hub.</p>
 </main>
 <footer class="xph-foot"><div class="disclaimer">{DISCLAIMER}</div><div class="xph-window">XP Strategy &middot; Prospect Audits &middot; Data: all audit hubs &middot; Report created {today}</div></footer>
 <script>
 (function(){{
-  var $ = function(i){{ return document.getElementById(i); }}, rows = [].slice.call(document.querySelectorAll('tbody tr'));
-  rows.forEach(function(r){{ if (r.getAttribute('data-st') === 'lost') r.className = 'lost'; }});
+  var $ = function(i){{ return document.getElementById(i); }}, rows = [].slice.call(document.querySelectorAll('tbody.acct'));
+  rows.forEach(function(r){{ if (r.getAttribute('data-st') === 'lost') r.className += ' lost'; }});
   $('pick').addEventListener('change', function(){{ if ($('pick').value) location.href = '../accounts/' + $('pick').value + '/'; }});
   function apply(){{
     var t = $('q').value.trim().toLowerCase(), ty = $('ty').value, mo = $('mo').value, st = $('st').value, n = 0;
     rows.forEach(function(r){{
       var ok = (!t || r.getAttribute('data-q').indexOf(t) >= 0)
         && (!ty || r.getAttribute('data-types').indexOf('|' + ty + '|') >= 0)
-        && (!mo || r.getAttribute('data-m') === mo)
+        && (!mo || r.getAttribute('data-m').indexOf('|' + mo + '|') >= 0)
         && (!st || r.getAttribute('data-st') === st);
       r.style.display = ok ? '' : 'none'; if (ok) n++;
     }});
-    $('count').textContent = n + ' audit' + (n === 1 ? '' : 's');
+    $('count').textContent = n + ' account' + (n === 1 ? '' : 's');
     try {{ localStorage.setItem('xp-audits-hub-f', JSON.stringify({{ty: ty, mo: mo, st: st}})); }} catch (e) {{}}
   }}
   try {{ var f = JSON.parse(localStorage.getItem('xp-audits-hub-f') || '{{}}'); ['ty','mo','st'].forEach(function(k){{ if (f[k] !== undefined && [].some.call($(k).options, function(o){{ return o.value === f[k]; }})) $(k).value = f[k]; }}); }} catch (e) {{}}
