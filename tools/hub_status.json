@@ -1,0 +1,10 @@
+{
+  "_note": "Optional per-account status for hub/index.html. Key = account slug. status: prospect (default) | client | lost. client_hub = the account's Monthly-Audits hub once the prospect signs. note = short label shown under the name. Nothing confidential here: the repo and the page are public.",
+  "badass-moto-182dc0ad": {"status": "client", "client_hub": "https://xpstrategy.github.io/Monthly-Audits/accounts/badass-moto-c91d6e48/"},
+  "joe-trends-cbddfaef": {"status": "client", "client_hub": "https://xpstrategy.github.io/Monthly-Audits/accounts/joes-trend-58c2f75b/"},
+  "ultimate-washer-fafc396d": {"status": "client", "client_hub": "https://xpstrategy.github.io/Monthly-Audits/accounts/ultimate-washer-1fbdd20a/"},
+  "smart-cookie-7cef9d36": {"status": "client", "client_hub": "https://xpstrategy.github.io/Monthly-Audits/accounts/smart-cookie-f769d7eb/"},
+  "gout-and-you-0197fea3": {"status": "client", "client_hub": "https://xpstrategy.github.io/Monthly-Audits/accounts/smart-cookie-f769d7eb/", "note": "Earlier audit, superseded by Smart Cookie"},
+  "trainedto-8ac378b2": {"status": "client", "client_hub": "https://xpstrategy.github.io/Monthly-Audits/accounts/sidekick-87663fea/"},
+  "trainedto-v2-9a103a6c": {"status": "client", "client_hub": "https://xpstrategy.github.io/Monthly-Audits/accounts/sidekick-87663fea/", "note": "v2 (without Time to Convert)"}
+}

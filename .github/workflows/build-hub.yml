@@ -1,0 +1,19 @@
+name: Rebuild audits hub
+on:
+  push:
+    branches: [main]
+    paths: ["accounts/**", "tools/build_hub.py", "tools/hub_status.json"]
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: python3 tools/build_hub.py --repo .
+      - run: |
+          git config user.name "xp-hub-bot"
+          git config user.email "xp-hub-bot@users.noreply.github.com"
+          git add hub/index.html
+          git diff --cached --quiet || (git commit -m "Rebuild audits hub" && git push)

@@ -10,6 +10,9 @@ accounts/<company>-<8 hex>/
   category.html  category scorecard (optional)
   seo.html       SEO / listing review (optional)
   links.json     live links + Google Sheet tab ids (pages read this on load)
+hub/index.html       master hub: every audit on one page (https://xpstrategy.github.io/Prospect-Audits/hub/)
+tools/build_hub.py   rebuilds hub/index.html from accounts/*/links.json
+tools/hub_status.json  optional prospect / client / closed status per account slug
 templates/hub.html   hub shell used by the Drive linker
 apps-script/         Drive -> Google Sheets -> GitHub linker
 ```
@@ -83,6 +86,14 @@ Extra pages: name them `[AUDIT]-<Company> - XP Strategy - Category.html`,
 
 Edit a link later: change it in the sheet's **Links** tab and re-drop the Account
 Data file, or edit `accounts/<slug>/links.json` on GitHub. The pages update on reload.
+
+## Master hub
+
+`hub/index.html` lists every audit (PPC audit link, other reports, data window, Drive,
+data sheet, status). It is rebuilt by `.github/workflows/build-hub.yml` on every push to
+`accounts/`, or by hand: `python3 tools/build_hub.py --repo .`
+When a prospect signs, add its slug to `tools/hub_status.json` with `"status": "client"`
+and its Monthly-Audits hub URL; use `"lost"` for prospects that did not close.
 
 ## Troubleshooting
 
